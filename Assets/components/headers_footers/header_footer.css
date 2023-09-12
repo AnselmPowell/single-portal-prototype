@@ -1,0 +1,138 @@
+
+.lang-picker {
+    display: flex;
+    padding: 2px 5px;
+    font-size: 10px;
+    background-color: rgb(210, 208, 208);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.lang-picker span  {
+    margin-right: 2px;
+}
+
+
+
+.account-btn-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-right: 10px ;
+    align-items: center;
+}
+
+.account-btn-primary {
+    background-color: #AA0D1B;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+.account-btn-secondary {
+    background-color: white;
+    color: black;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+
+
+/* SPORT WALES HEADER 1 STYLE */
+
+.sw_header1 {
+    display: flex;
+    background-color: #164B63;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+    align-items: center;
+    width: 100%;
+} 
+
+.sw_nav  {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+   
+
+}
+.sw_nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    margin: 0 10px;
+}
+
+.sw_nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.account i {
+    margin: 4px;
+}
+
+
+
+/* SPORT WALES FOOTER 1 STYLE */
+
+.sw_footer1 {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #164B63;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0px;
+}
+
+.sw_footer1 .sw_logo {
+    width: 180px;
+}
+
+.sw_footer-nav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: baseline; */
+    margin-left: 40%;
+
+}
+
+.sw_footer-nav ul {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.sw_footer-nav ul li {
+    list-style: none;
+    position: relative;
+    margin: 0 10px;
+}
+
+.sw_footer-nav ul li a {
+    color: rgba(255, 255, 255, 0.539);
+    text-decoration: none;
+    font-size: 8px;
+}
+
+.sw_footer-nav ul .title-list {
+    color: white;
+    font-size: 8px;
+}
+

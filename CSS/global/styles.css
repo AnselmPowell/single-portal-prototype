@@ -1,0 +1,340 @@
+/* GLOBAL STYLES  */
+/* About global styles */
+/* Add all global styles here */
+
+
+
+
+/*         TABLE OF CONTEXT             */
+/*                                      */
+/*                                      */
+/*   -DEFAULT STYLES                    */
+/*   -DESIGN SYSTEM CONTAINER           */
+/*   -LAYOUTS & CONTAINERS              */
+/*      -Two-Column Container           */
+/*      -Three-Column Container         */
+/*      -Four-Column Container          */
+/*      -Responsive Container MQ        */
+/*   -LOGO STYLES                       */
+/*   -FONTS STYLES                      */
+/*   -COLORS                            */
+/*   -HEADER STYLES                     */
+/*   -FOOTER STYLES                     */
+/*   -LIST STYLES                       */
+
+/*   -IMAGE STYLES                      */
+/*   -UTILS                             */
+/*      -separators                     */
+/*   -DEFAULT STYLES                    */
+/*                                      */
+/*                                      */
+
+
+
+
+/* DEFAULT STYLES */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white; /* White background */
+    color: black; /*  text */
+    height: 100vh;
+}
+
+a:visited {
+    color: #000;
+}
+
+
+/* DESIGN SYSTEM CONTAINER  */
+
+.design-system-logo{
+    position: absolute;
+    left: 0px;
+    width: 220px;
+    margin: 0px 40px;
+}
+
+.design-system-header {
+    display: flex;
+    background-color: #AA0D1B;
+    font-family: 'Montserrat', sans-serif;
+    padding: 70px 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* transform: skew(10deg); */
+}
+
+.design-system-header h1 {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.design-system-nav  {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 22px;
+    list-style: none;
+}
+
+.design-system-container{
+    padding: 0px 30px;
+    padding-top: 120px;
+    height: 800%;
+    width: 100%;
+    display: flex;
+    gap: 3em;
+     flex-direction: column; 
+     align-items: center; 
+
+    background-color: rgb(246, 246, 246);
+}
+
+.design-system-container a {
+    color: white;
+}
+
+
+/* LAYOUTS & CONTAINERS */
+
+.container {
+    display: grid;
+    gap: 1em;
+    margin: 1em;
+    /* border: 1px solid #dd6161; */
+    /* padding: 5px; */
+    /* align-items: center; */
+    /* justify-items: center; */
+}
+
+
+
+/* Two-Column Container */
+.two-column {
+    /* border: 1px solid red; */
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Three-Column Container */
+.three-column {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Four-Column Container */
+.four-column {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.center-self {
+    justify-self: center;
+}
+
+
+/* Responsive Container MQ  */
+
+@media screen and (max-width: 850px) {
+    .four-column {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .three-column, .four-column {
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .three-column, .four-column {
+        grid-template-columns: 1fr; /* Single column on even smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .two-column, .three-column, .four-column {
+        grid-template-columns: 1fr; /* Single column on even smaller screens */
+    }
+}
+
+
+/* LOGO STYLES  */
+
+.sw_logo {
+    width: 120px;
+}
+
+
+/* FONTS STYLES */
+
+.txt-large {
+    font-size: large;
+}
+.txt-medium {
+    font-size: medium;
+}
+.txt-small {
+    font-size: small;
+}
+
+
+
+/* COLORS  */
+
+.primary-color {
+    color: red;
+}
+.secondary-color {
+    color: white;
+}
+
+
+.red {
+    background-color: #ff5733;
+    color: #fff;
+}
+
+.blue {
+    background-color: #338bff;
+    color: #fff;
+}
+
+.green {
+    background-color: #33ff6e;
+    color: #000;
+}
+
+.yellow {
+    background-color: #ffed33;
+    color: #000;
+}
+
+.orange {
+    background-color: #ffaa33;
+    color: #fff;
+}
+
+.purple {
+    background-color: #9933ff;
+    color: #fff;
+}
+
+
+/* HEADER STYLES */
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+
+/* FOOTER STYLES  */
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* LIST STYLES */
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.hover-list li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 254, 254);
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+    position: relative;
+}
+
+.hover-list li:hover::after {
+    width: 100%;
+}
+
+
+
+
+/* Primary Button Component */
+.btn-primary {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: rgba(159, 4, 4);
+    color: white;
+}
+
+/* Secondary Button Component */
+.btn-secondary {
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.btn-secondary:hover {
+    background-color: rgb(234, 233, 233);
+    color: red;
+}
+
+
+/* UTILS */
+
+/* Separator */
+
+.vertical_separator {
+    border: 1px solid rgba(0, 0, 0, 0.352);
+    width: 1px;
+    margin: 0 5px;
+}
+
+/* HOVER STYLES  */
+
+.bg-red-hover:hover {
+    background-color: #df1425;  
+}
+

@@ -1,0 +1,172 @@
+
+
+/*         TABLE OF CONTEXT             */
+/*                                      */
+/*                                      */
+/*    -SUBMIT BUTTON                    */
+/*       -Login Button                  */
+/*       -Singin Button                 */
+/*    -SOCIAL BUTTONS STYLES            */
+/*       -Social Containers             */
+/*       -Social buttons                */
+/*       -separators                    */
+/*                                      */
+/*                                      */
+/*                                      */
+
+
+
+/* SW BUTTON */
+/* h2 {
+    font-family:open sans;
+    color:#fff;
+    position: relative;
+    display:inline-block;
+    padding:10px 20px
+  }
+  h2:after {
+    background: #3498db;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      -webkit-transform: skew(-9deg);
+      -moz-transform: skew(-9deg); 
+      -o-transform: skew(-9deg); 
+      z-index: -1;
+  } */
+
+
+/* SUBMIT BUTTON */
+
+.sw_btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #AA0D1B;
+    color: white;
+    border: 1px soild black;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sw_primary-btn { 
+    background-color: #AA0D1B;
+    padding: 10px 25px;
+}
+
+.sw_secondary-btn { 
+    background-color: #ffffff;
+    padding: 10px 25px;
+    color: black;
+
+}
+
+.sw_primary-btn:hover { 
+    padding: 10px 25px;
+    background-color: #df1425;
+}
+
+
+
+/* Login Button */
+
+.login-btn[type="submit"] {
+    width: 60px;
+    padding: 8px 20px;
+    background-color: #AA0D1B;
+    color: #fff;
+}
+
+.login-btn[type="submit"]:hover {
+    background-color: #df1425;
+}
+
+
+/* Signin Button */
+
+.signin-btn[type="submit"] {
+    width: 90px;
+    padding: 8px 20px;
+    background-color: #AA0D1B;
+    color: #fff;
+}
+
+.signin-btn[type="submit"]:hover {
+    background-color: #df1425;
+}
+
+
+/* SOCIAL BUTTONS STYLES */
+
+/* Social Containers */
+.social-login-container {
+    display: flex;
+    gap: 0.5em;
+}
+
+.social-login-container p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.social-login-long-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.social-login-long-container p {
+    margin-bottom: 10px;
+}
+
+/* social buttons */
+
+.social-button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #5d5c5c;
+    border-radius: 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-button p {
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.486);
+}
+
+.social-button:hover p {
+    color: rgb(0, 0, 0);
+}
+
+.social-button:hover {
+    background-color: #f5f5f5;
+}
+
+/* separators  */
+
+.or_separator {
+  display: flex;
+  align-items: center;
+}
+.or_separator span {
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    width: 80%;
+    height: 0.5px;
+
+}
+.or_separator p {
+   margin: 5px;
+   font-size: 18px;
+   color: rgba(0, 0, 0, 0.322);
+
+}

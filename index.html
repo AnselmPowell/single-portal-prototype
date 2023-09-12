@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Sign-on Portal</title>
+
+    <!-- FONTAWESOME  -->
+    <script src="https://kit.fontawesome.com/937b7e56e6.js" crossorigin="anonymous"></script>
+
+    <!-- FLAGS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+/>
+
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- STYLE SHEETS  -->
+    <link rel="stylesheet" type="text/css" href="CSS/global/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/single-sign-on/styles.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/components/headers_footers/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/components/login_signin_forms/login_signin_forms.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/components/buttons/buttons.css">
+
+
+    <!-- Add links to JavaScript, Bootstrap, and SASS files here -->
+</head>
+
+<body>
+     <!-- SPORT WALES HEADER 1  -->
+     <div class="sw_header1">
+        <div class="sw_logo">
+            <a href="index.html"><img src="/Assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+        </div>
+
+        <div class="sw_nav">
+            <ul class="hover-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Funding</a></li>
+                <li><a href="index.html">Booking</a></li>
+                <li><a href="index.html">Learning</a></li>
+            </ul>
+        </div>
+
+        <div class="account">
+            <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
+            <i  style="color: white;" class="fa-solid fa-user"></i>
+            <div class="lang-picker">
+                <span class="fi fi-gb"></span>
+                <p style="color: white;">EN</p>
+                <i style="color: white;" class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="sw_title">
+            <h1> Welcome to Sport Wales Portal </h1> 
+        </div>
+    
+        <div class="single-portal-layout">
+
+            <!-- LOGIN FORM  -->
+            <div class="login_signin-container ">
+                <form class="login_signin-form login">
+                    <h2>Log in to your account</h2>
+                    <label for="username">Username or email address</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <div class="password_input">
+                        <input type="password" id="password" name="password" required>
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                    
+                    <div class="or_separator">
+                        <span></span>
+                        <p>or</p>
+                        <span></span>
+                    </div>
+                    <div class="social-login-container">
+                        <button class="social-button google"><i class="fa-brands fa-google"></i></button>
+                        <button class="social-button facebook"><i class="fa-brands fa-facebook"></i></button>
+                        <button class="social-button apple"><i class="fa-brands fa-apple"></i></button>
+                    </div>
+                    <div class="sw_btn login-btn"  type="submit">Login</div>
+                </form>  
+            </div>
+
+            <div class="vertical_separator"> </div>
+
+            <!-- SIGNIN FORM  -->
+
+            <div class="login_signin-container">
+                <form class="login_signin-form signin">
+                    <h2>Register account</h2>
+                    <label for="username">Username or email address</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <div class="password_input">
+                        <input type="password" id="password" name="password" required>
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                    
+                    <div class="or_separator">
+                        <span></span>
+                        <p>or</p>
+                        <span></span>
+                    </div>
+                    <div class="social-login-long-container">
+                        <button class="social-button google"><i class="fa-brands fa-google"></i> <p>Sign up with Google</p>  </button>
+                        <button class="social-button facebook"><i class="fa-brands fa-facebook"></i> <p>Sign up with Facebook</p>  </button>
+                        <button class="social-button apple"><i class="fa-brands fa-apple"></i> <p>Sign up with Apple</p>   </button>
+                    </div>
+                    <div class="sw_btn signin-btn" type="submit">Register</div>
+                </form>  
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- SPORT WALES FOOTER 1  -->
+
+    <div class="home sw_footer1">
+        <div class="sw_logo">
+            <a href="index.html"><img src="/Assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+        </div>
+
+        <div class="sw_footer-nav">
+            <ul>
+                <li ><a class="title-list" href="index.html">Sport Wales</a></li>
+                <li><a href="index.html">About us</a></li>
+                <li><a href="index.html">Main Website</a></li>
+                <li><a href="index.html">Where we are</a></li>
+                
+            </ul>
+            <ul>
+                <li ><a class="title-list" href="index.html">Find out more</a></li>
+                <li><a href="index.html">Privacy</a></li>
+                <li><a href="index.html">Accessibility</a></li>
+                <li><a href="index.html">Cookie policy</a></li>
+                <li><a href="index.html">Freedom of Information</a></li>
+            </ul>
+        </div>
+        
+        <div class="account-btn-container">
+            <div class="account-btn-primary"> Register</div>
+            <div class="account-btn-secondary"> Log in</div>
+        </div>
+        
+        
+    </div>
+
+    
+</body>
+
+</html>

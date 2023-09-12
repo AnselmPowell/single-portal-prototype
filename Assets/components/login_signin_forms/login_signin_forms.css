@@ -1,0 +1,65 @@
+
+.login_signin-container {
+    width: 500px;
+    padding: 50px;
+    /* border: 1px solid #ddd;  */
+    /* background-color: #f5f5f5; */
+    margin: 20px; 
+}  
+
+
+.login_signin-form {
+    display: grid;
+    grid-template-rows: auto ;
+    gap: 2em;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+.login_signin-form .login {
+    border-right: 1px solid #3b3a3a;
+}
+
+.login_signin-form h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.login_signin-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.login_signin-form input[type="text"],
+.login_signin-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1.5px solid #313131;
+    border-radius: 0px;
+}
+
+.login_signin-form input[type="text"]:hover,
+.login_signin-form input[type="password"]:hover {
+    border: 2px solid #164B63;
+}
+
+.password_input .fa-eye {
+    position: relative;
+    left: 88%;
+    bottom: 60%;
+    font-size: 16px;
+    background: white;
+    padding: 0 5px;
+    color: rgba(72, 72, 72, 0.904);
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.password_input .fa-eye:hover {
+    color: rgba(18, 18, 18, 0.95);
+}
