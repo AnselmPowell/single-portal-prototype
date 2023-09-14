@@ -51,7 +51,7 @@ body, h1, h2, p, ul, li, a {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: white; /* White background */
+    background-color: #F5F5F5 !important;
     color: black; /*  text */
     height: 100vh;
 }
