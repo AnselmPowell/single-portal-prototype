@@ -24,7 +24,10 @@
     <!-- STYLE SHEETS  -->
     <link rel="stylesheet" type="text/css" href="css/global/styles.css">
     <link rel="stylesheet" type="text/css" href="css/home/styles.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/components/cards/cards.css"/>
+
     <link rel="stylesheet" type="text/css" href="css/booking/styles.css">
+
     <link rel="stylesheet" type="text/css" href="/assets/components/headers_footers/header_footer.css">
     <link rel="stylesheet" type="text/css" href="/assets/components/login_signin_forms/login_signin_forms.css">
     <link rel="stylesheet" type="text/css" href="/assets/components/buttons/buttons.css">
@@ -65,29 +68,57 @@
             </div>
         </div>
     </div>
-
+    <div class=" home-bg-image">
+        <h1 style="color: white; position:relative; bottom: -150px; z-index: 2;" class="font-weight-bold mt-5 mb-5">The Sport Wales Portal</h1>
+        <p style="color: white; position:relative; bottom: -150px; z-index: 2;" >Welcome to the Portal, where you can learn, apply for funding and make a booking all in one place </p>
+    </div>
     <div class="main">
-        <div class="container">
-            <h1 class="font-weight-bold mt-5 mb-5">Manage bookings</h1>
-        </div>
         
         <div class="container">
+            
+            
+                <!-- CARD 1 -->
+    
+                <div class="card-container">
+    
+                    <div class="card1">
+                        <div class="circle-icon">
+                            <!-- Add icon e.g  -->
+                            <i style="color: white; font-size: 50px;" class="fa-solid  fa-2xl fa-hand-holding-heart" ></i>
+                        </div>
+                        <p>Support and Funding </p>
+                    </div>  
+                    <div class="card1">
+                        <div class="circle-icon">
+                            <i style="color: white; font-size: 50px;" class="fa-solid fa-2xl fa-book-bookmark"></i>
+                        </div>
+                        <p>Manage your Bookings </p>
+                    </div>  
+                    <div class="card1">
+                        <div class="circle-icon">
+                            <i style="color: white; font-size: 50px;" class="fa-solid fa-2xl fa-graduation-cap"></i>
+                        </div>
+                        <p>Education Resources</p>
+                    </div>
+                </div>
+    
+            <div class="container">
+                <h1 class="font-weight-bold mt-5 mb-5">Your account</h1>
+            </div>
+
             <div class="card">
-                <p class="mt-5 ml-4 fs-1"><i class="fa-solid fa-2xl fa-book-bookmark blue-icon"></i></p>
-                <h2 class="mt-5 ml-2 pl-4 pb-4 font-weight-bold"><strong>Your bookings</strong></h2>
-                <div class="container ml-3 pb-4">
+                <div class="mt-3 mb-3 pl-4 pt-4"><i  style="color: #164B63; font-size: 50px;" class="fa-solid fa-2xl fa-graduation-cap"></i></div>
+                <h2 class="mt-3 ml-2 pl-4 pb-1 font-weight-bold"><strong>Your funding applications</strong></h2>
+                <div class="container ml-3 p-4">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h3 class="pb-3 font-weight-bold">Tennis</h3>
-                            <p class="mb-0 ">20th Jan, 14:00 - 15:00</p>
-                            <p>National Centre, Court 3</p>
-                            <div class="btn btn-outline-danger">Edit or delete</div>
+                            <p class="mb-0 ">You applied for the <strong>Active Wales Fund </strong> on the 18th October 2022 </p>
+                            <div class="btn btn-danger mt-5">Go to Funding</div>
                         </div>
                         <div class="col-lg-6">
-                            <h3 class="pb-3 font-weight-bold">Squash</h3>
-                            <p class="mb-0">30th Jan, 06:30 - 07:30</p>
-                            <p>National Centre, Court 5</p>
-                            <div class="btn btn-outline-danger">Edit or delete</div>
+                            <p class="mb-0" style="font-weight: bolder;">Application status</p>
+                            <br>
+                            <p class="p-1" style="background-color: rgb(190, 172, 217); display: inline; font-weight: bolder;">RECEIVED</p>
                         </div>
                     </div>
                 </div>
@@ -97,30 +128,51 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="card">
-                    <img class="img-fluid mb-4 image-radius" src="assets/img/national-centre.png" alt="National Centre at Sport Wales">
-                    <div class="ml-4 pb-4">
-                        <h3 class="pb-3 font-weight-bold">Cardiff National Centre</h3>
-                        <p>Elite facitlities in Wales provide athletes with world-class performance environments.</p>
-                        <div class="btn btn-danger">Book National Centre</div>
+                    <div class="ml-4 p-4">
+                        <div class="mt-3 mb-3"><i style="color: #164B63; font-size: 50px;" class="fa-solid fa-2xl fa-book-bookmark"></i></div>
+                        <h3 class="pb-3 font-weight-bold">Your bookings</h3>
+                        <p>You booked <strong>Tennis</strong> for the 20th Jan 2022</p>
+                        <br>
+                        <div class="btn btn-danger mt-5">Manage Booking</div>
                     </div>
                 </div>
             </div>
                 <div class="col-lg-6">
                     <div class="card">
-                        <img class="img-fluid mb-4 image-radius" src="assets/img/plas-menai.png" alt="National Centre at Sport Wales">
-                        <div class="ml-4 pb-4">
-                            <h3 class="pb-3 font-weight-bold">Plas Menai</h3>
-                            <p>Fun-packed activities and watersports courses for schools, groups, families, and invidiuals. </p>
-                            <div class="btn btn-danger">Book Plas Menai</div>
+                        <div class="ml-4 p-4">
+                            <div class="mt-3 mb-3"><i style="color: #164B63; font-size: 50px;" class="fa-solid fa-2xl fa-graduation-cap"></i></div>
+                            <h3 class="pb-3 font-weight-bold">Your courses</h3>
+                            <p>Teachers! find the right resources for your students at any skil level. </p>
+                            <div class="btn btn-danger mt-5 ">View all Learning</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+               <div  class="col-lg-6">
+                <div class="m-5" >
+                    <div >
+        
+                        <h3 class="pb-3 font-weight-bold">About us</h3>
+                        <p>We Want Wales to be more active, healther nation. We are national organisation responsible for developing and promoting sport and phsical activity in Wales</p>
+                        <p> We are national organisation responsible for developing and promoting sport and phsical activity in Wales</p>
+                        <p>Explore mre on our work to help sport in Wales thrive</p>
+                        <div class="btn btn-danger mt-5 ">Learn about us</div>
+                    </div>
+                </div>
+            </div>
+                <div style="background-color: transparent;" class="col-lg-6">
+                    <div class="card">
+                        <div class="map">
+                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
     <!-- SPORT WALES FOOTER 1  -->
 
@@ -153,6 +205,10 @@
         
         
     </div>
+
+
+
+
 
     
 </body>
