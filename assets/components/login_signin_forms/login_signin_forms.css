@@ -1,65 +1,100 @@
+/* Mobile Optimization */
 
+/* Target the login_signin-container */
 .login_signin-container {
-    width: 500px;
-    padding: 50px;
-    /* border: 1px solid #ddd;  */
-    /* background-color: #f5f5f5; */
-    margin: 20px; 
-}  
+  width: 100%; /* Adjust to full width */
+  padding: 20px; /* Increase padding */
+  margin: 10px 0; /* Adjust margins */
+  background-color: #f5f5f5; /* Apply background color */
+}
 
-
+/* Target the login_signin-form */
 .login_signin-form {
-    display: grid;
-    grid-template-rows: auto ;
-    gap: 2em;
-    margin-bottom: 10px;
-    padding: 10px;
-
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1em; /* Reduce row gap */
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
-.login_signin-form .login {
-    border-right: 1px solid #3b3a3a;
-}
-
-.login_signin-form h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
+/* Adjust label and input styles */
 .login_signin-form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 8px;
-    font-size: 18px;
+  margin-bottom: 6px; /* Slightly reduce margin */
+  font-size: 16px; /* Adjust font size */
 }
 
 .login_signin-form input[type="text"],
 .login_signin-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1.5px solid #313131;
-    border-radius: 0px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #313131;
+  border-radius: 4px; /* Apply a slight border radius */
 }
 
 .login_signin-form input[type="text"]:hover,
 .login_signin-form input[type="password"]:hover {
-    border: 2px solid #164B63;
+  border: 2px solid #164b63; /* Apply hover style */
 }
 
-.password_input .fa-eye {
-    position: relative;
-    left: 88%;
-    bottom: 60%;
-    font-size: 16px;
-    background: white;
-    padding: 0 5px;
-    color: rgba(72, 72, 72, 0.904);
-    background-color: transparent;
-    cursor: pointer;
+/* Style password input box */
+.password_input {
+  display: flex;
+  align-items: center;
+}
 
+/* Style the "eye" icon */
+.password_input .fa-eye {
+  position: relative;
+  left: -30px;
+  font-size: 16px;
+  color: rgba(72, 72, 72, 0.904);
+  cursor: pointer;
+  z-index: 2;
+  padding-right: 5px;
+  background-color: white;
 }
 
 .password_input .fa-eye:hover {
-    color: rgba(18, 18, 18, 0.95);
+  color: rgba(18, 18, 18, 0.95);
+}
+
+/* Media Queries */
+
+/* Tablet Styling */
+@media screen and (min-width: 641px) {
+  /* Adjust .login_signin-container */
+  .login_signin-container {
+    width: 80%; /* Adjust container width for tablets */
+    padding: 30px; /* Increase padding */
+    margin: 20px auto; /* Center the container */
+  }
+
+  /* Adjust .login_signin-form */
+  .login_signin-form {
+    gap: 1.5em; /* Increase row gap for tablets */
+  }
+
+  /* Any additional tablet-specific styles go here */
+}
+
+/* Laptop Styling */
+@media screen and (min-width: 1025px) {
+  /* Adjust .login_signin-container */
+  .login_signin-container {
+    width: 60%; /* Adjust container width for laptops */
+    padding: 40px; /* Increase padding */
+  }
+
+  /* Any additional laptop-specific styles go here */
+}
+
+/* Desktop Styling */
+@media screen and (min-width: 1441px) {
+  /* Adjust .login_signin-container */
+  .login_signin-container {
+    width: 50%; /* Adjust container width for desktops */
+    padding: 50px; /* Increase padding */
+  }
+
+  /* Any additional desktop-specific styles go here */
 }

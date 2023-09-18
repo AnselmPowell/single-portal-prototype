@@ -1,347 +1,207 @@
-/* GLOBAL STYLES  */
-/* About global styles */
-/* Add all global styles here */
+/* -- GLOBAL STYLE SHEET --  */
+
+
+/* -- TABLE OF CONTENT -- */
+
+/* - ROOT VARIABLES */
+/* - LAYOUTS & CONTAINERS */
+/*    - Grid Container */
+/*    - Two-Column Container */
+/*    - Three-Column Container */
+/* - DEFAULT LOGO STYLES */
+/* - DEFAULT CARD STYLES  */
+/* - DEFAULT FONTS STYLES */
+/* - UTILS STYLES */
+/*    - Hover Styles */
+/*    - Separator */
+
+/* ----- Media Queries ----- */
+/* ## TABLET STYLES */
+/* ## LAPTOP STYLES */
+/* ## DESKTOP STYLES */
 
 
 
 
-/*         TABLE OF CONTEXT             */
-/*                                      */
-/*                                      */
-/*   -DEFAULT STYLES                    */
-/*   -DESIGN SYSTEM CONTAINER           */
-/*   -LAYOUTS & CONTAINERS              */
-/*      -Two-Column Container           */
-/*      -Three-Column Container         */
-/*      -Four-Column Container          */
-/*      -Responsive Container MQ        */
-/*   -LOGO STYLES                       */
-/*   -FONTS STYLES                      */
-/*   -COLORS                            */
-/*   -HEADER STYLES                     */
-/*   -FOOTER STYLES                     */
-/*   -LIST STYLES                       */
+/* ROOT VARIABLES */
 
-/*   -IMAGE STYLES                      */
-/*   -UTILS                             */
-/*      -separators                     */
-/*   -DEFAULT STYLES                    */
-/*                                      */
-/*                                      */
+:root {
+  --primary-color: red;
+  --secondary-color: white;
+  --background-color: #f5f5f5;
 
-
-
-
-/* DEFAULT STYLES */
+  --text-color: black;
+  --box-shadow: 0px 0px 46px 0px rgba(99, 99, 99, 0.15);
+  --border-radius: 0.8rem;
+  --btn-padding: 10px 20px;
+}
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    text-decoration: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
-
 
 body {
-    font-family: 'Montserrat', sans-serif !important;
-    background-color: #F5F5F5 !important;
-    color: black; /*  text */
-    height: 100vh;
+  font-family: "Montserrat", sans-serif !important;
+  background-color: var(--background-color) !important;
+  color: var(--text-color);
+  height: 100vh;
 }
 
 a:visited {
-    color: #000;
+  color: var(--text-color);
 }
 
-
-/* DESIGN SYSTEM CONTAINER  */
-
-.design-system-logo{
-    position: absolute;
-    left: 0px;
-    width: 220px;
-    margin: 0px 40px;
-}
-
-.design-system-header {
-    display: flex;
-    background-color: #AA0D1B;
-    font-family: 'Montserrat', sans-serif;
-    padding: 70px 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* transform: skew(10deg); */
-}
-
-.design-system-header h1 {
-    font-size: 80px;
-    color: rgb(255, 255, 255);
-}
-
-.design-system-nav  {
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 40px;
-    text-decoration: none;
-    font-size: 22px;
-    list-style: none;
-}
-
-.design-system-container{
-    padding: 0px 30px;
-    padding-top: 120px;
-    height: 800%;
-    width: 100%;
-    display: flex;
-    gap: 3em;
-    flex-direction: column; 
-    align-items: center; 
-
-    background-color: rgb(246, 246, 246);
-}
-
-.design-system-container a {
-    color: white;
-}
-
-.card {
-    background-color: white;
-    border-radius: 0.8rem!important;
-    box-shadow: 0px 0px 46px 0px rgba(99, 99, 99, 0.15);
-    border: none!important;
-}
+/*   ## MOBILE(DEFAULT) STYLES (up to 768px wide) */
+/*      Your mobile/default styles go here   */
 
 
 /* LAYOUTS & CONTAINERS */
 
+/* Grid Container */
 .container {
-    display: grid;
-    gap: 1em;
-    margin: 1em;
-    /* border: 1px solid #dd6161; */
-    /* padding: 5px; */
-    /* align-items: center; */
-    /* justify-items: center; */
+  display: grid;
+  gap: 1em;
+  margin: 1em;
 }
-
-
 
 /* Two-Column Container */
 .two-column {
-    /* border: 1px solid red; */
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Three-Column Container */
 .three-column {
-    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Four-Column Container */
-.four-column {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.center-self {
-    justify-self: center;
-}
-
-
-/* Responsive Container MQ  */
-
-@media screen and (max-width: 850px) {
-    .four-column {
-        grid-template-columns: 1fr 1fr 1fr; /* Three columns on smaller screens */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .three-column, .four-column {
-        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .three-column, .four-column {
-        grid-template-columns: 1fr; /* Single column on even smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .two-column, .three-column, .four-column {
-        grid-template-columns: 1fr; /* Single column on even smaller screens */
-    }
-}
-
-
-/* LOGO STYLES  */
-
+/* DEFAULT LOGO STYLES */
 .sw_logo {
-    width: 120px;
+  width: 120px;
 }
 
 
-/* FONTS STYLES */
-
-.txt-large {
-    font-size: large;
-}
-.txt-medium {
-    font-size: medium;
-}
-.txt-small {
-    font-size: small;
+/* DEFAULT CARD STYLES */
+.card {
+  background-color: white;
+  border-radius: var(--border-radius) !important;
+  box-shadow: var(--box-shadow);
+  border: none !important;
 }
 
 
+/* DEFAULT FONTS STYLES */
 
-/* COLORS  */
-
-.primary-color {
-    color: red;
+.header-l {
+  font-size: large;
 }
-.secondary-color {
-    color: white;
+.header-m {
+  font-size: medium;
 }
-
-
-.red {
-    background-color: #ff5733;
-    color: #fff;
+.header-s {
+  font-size: small;
 }
 
-.blue {
-    background-color: #338bff;
-    color: #fff;
+.subheader-l {
+  font-size: large;
+}
+.subheader-m {
+  font-size: medium;
+}
+.subheader-s {
+  font-size: small;
 }
 
-.green {
-    background-color: #33ff6e;
-    color: #000;
+.txt-l {
+  font-size: large;
 }
-
-.yellow {
-    background-color: #ffed33;
-    color: #000;
+.txt-m {
+  font-size: medium;
 }
-
-.orange {
-    background-color: #ffaa33;
-    color: #fff;
-}
-
-.purple {
-    background-color: #9933ff;
-    color: #fff;
+.txt-s {
+  font-size: small;
 }
 
 
-/* HEADER STYLES */
+/* HOVER STYLES */
 
-header {
-    text-align: center;
-}
-
-header h1 {
-    font-size: 24px;
-}
-
-
-/* FOOTER STYLES  */
-
-footer {
-    text-align: center;
-    padding: 10px;
-}
-
-
-/* LIST STYLES */
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-}
 
 .hover-list li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: rgb(255, 254, 254);
-    display: block;
-    transition: 0.5s;
-    margin: auto;
-    position: relative;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(255, 254, 254);
+  display: block;
+  transition: 0.5s;
+  margin: auto;
+  position: relative;
 }
 
 .hover-list li:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
+/* UTILS STYLES */
 
+/* Hover Styles */
 
-
-/* Primary Button Component */
-.btn-primary {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add smooth transition */
+.hover-list li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(255, 254, 254);
+  display: block;
+  transition: 0.5s;
+  margin: auto;
+  position: relative;
 }
 
-.btn-primary:hover {
-    background-color: rgba(159, 4, 4);
-    color: white;
+.hover-list li:hover::after {
+  width: 100%;
 }
-
-/* Secondary Button Component */
-.btn-secondary {
-    background-color: white;
-    color: red;
-    padding: 10px 20px;
-    border: 2px solid red;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Add smooth transition */
-}
-
-.btn-secondary:hover {
-    background-color: rgb(234, 233, 233);
-    color: red;
-}
-
-
-/* UTILS */
 
 /* Separator */
 
 .vertical_separator {
-    border: 1px solid rgba(0, 0, 0, 0.352);
-    width: 1px;
-    margin: 0 5px;
+  border: 1px solid rgba(0, 0, 0, 0.352);
+  width: 1px;
+  height: auto;
+  margin: 0 5px;
 }
 
-/* HOVER STYLES  */
 
-.bg-red-hover:hover {
-    background-color: #df1425;  
+
+/*   ## TABLET STYLES (769px to 1024px wide) */
+@media screen and (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {
+     /* Your tablet-specific styles go here */
+  /* - {NAME} STYLES */
 }
 
+
+/*   ## LAPTOP STYLES (1025px to 1440px wide) */
+@media screen and (min-width: var(--laptop-min)) and (max-width: var(--laptop-max)) {
+     /* Your laptop-specific styles go here */
+  /* - {NAME} STYLES */
+}
+
+
+/*   ## DESKTOP STYLES (1441px wide and above) */
+@media screen and (min-width: var(--desktop-min)) {
+     /* Your desktop-specific styles go here */
+  /* - {NAME} STYLES */
+}

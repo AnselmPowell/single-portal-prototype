@@ -1,0 +1,63 @@
+/* DESIGN SYSTEM CONTAINER */
+
+:root {
+  --primary-color: red;
+  --secondary-color: white;
+  --background-color: #f5f5f5;
+
+  --text-color: black;
+  --box-shadow: 0px 0px 46px 0px rgba(99, 99, 99, 0.15);
+  --border-radius: 0.8rem;
+  --btn-padding: 10px 20px;
+}
+
+.design-system-logo {
+  position: absolute;
+  left: 0px;
+  width: 220px;
+  margin: 0px 40px;
+}
+
+.design-system-header {
+  display: flex;
+  background-color: #aa0d1b;
+  font-family: "Montserrat", sans-serif;
+  padding: 70px 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.design-system-header h1 {
+  font-size: 80px;
+  color: var(--secondary-color);
+}
+
+.design-system-nav {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 22px;
+  list-style: none;
+}
+
+.design-system-container {
+  padding: 0px 30px;
+  padding-top: 120px;
+  height: 800%;
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.design-system-container a {
+  color: var(--secondary-color);
+}

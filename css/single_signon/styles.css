@@ -1,37 +1,82 @@
 /* Home page specific styles */
-/* Add styles for the services page content here */
 
-
-
+/* Target the .main */
 .main {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-content: center;
-    
-    
-
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
-
-/* .sw_footer1 {
-    position: absolute;
-    bottom: 0px;
-} */
-
+/* Target the .single-portal-layout */
 .single-portal-layout {
-    display: flex;
-    justify-content: center;
-    gap: 1px;
-
- /* margin: 0 auto; */
- /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
 }
 
+/* Target the .sw_title */
 .sw_title {
-    margin: 140px auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 50px auto; /* Reduce top margin for mobile optimisation */
 }
-.sw_title h1{
-    font-weight: bolder;
-    font-size: 38px;
+
+.sw_title h1 {
+  font-weight: bolder;
+  font-size: 32px; /* Adjust font size for mobile */
+}
+
+/* Media Queries */
+
+/* Tablet Styling */
+@media screen and (min-width: 641px) {
+  .single-portal-layout {
+    flex-direction: row;
+  }
+  /* Adjust .sw_title */
+  .sw_title {
+    margin: 80px auto; /* Increase top margin for tablets */
+  }
+
+  .sw_title h1 {
+    font-size: 36px; /* Adjust font size for tablets */
+  }
+
+  /* Any additional tablet-specific styles go here */
+}
+
+/* Laptop Styling */
+@media screen and (min-width: 1025px) {
+  .single-portal-layout {
+    flex-direction: row;
+  }
+  /* Adjust .sw_title */
+  .sw_title {
+    margin: 120px auto; /* Increase top margin for laptops */
+  }
+
+  .sw_title h1 {
+    font-size: 40px; /* Adjust font size for laptops */
+  }
+
+  /* Any additional laptop-specific styles go here */
+}
+
+/* Desktop Styling */
+@media screen and (min-width: 1441px) {
+  .single-portal-layout {
+    flex-direction: row;
+  }
+  /* Adjust .sw_title */
+  .sw_title {
+    margin: 140px auto; /* Increase top margin for desktops */
+  }
+
+  .sw_title h1 {
+    font-size: 44px; /* Adjust font size for desktops */
+  }
+
+  /* Any additional desktop-specific styles go here */
 }

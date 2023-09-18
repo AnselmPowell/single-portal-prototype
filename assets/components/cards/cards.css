@@ -1,69 +1,92 @@
+/* All Screen responsive card*/
 
-
-/* body {
-    background-color: rgb(231, 230, 230);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;  
-    justify-content: center;
-    
-} */
+/* Card 1 Container */
 
 .card-container {
-    display: flex;
-    align-items: center;  
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
 }
 
+/* Card 1 */
+
 .card1 {
-    margin: 10px;
-    background-color: rgb(255, 255, 255);
-    height: 160px;
-    width: 185px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    justify-content: center;
-    padding: 0px 20px;
-    text-align: center;
-    cursor: pointer;
-    
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  cursor: pointer;
+  width: 33%;
+  padding-bottom: 28%;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.card-item {
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .circle-icon {
-    display: flex;
-    align-items: center;  
-    justify-content: center;
-    position: relative;
-    top: -60px;
-    background-color: #AA0D1B;
-    border-radius: 50%;
-    height: 110px;
-    width: 110px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #aa0d1b;
+  border-radius: 50%;
+  width: 110%;
+  padding-top: 110%;
+  position: absolute;
+  top: -16vw;
+  left: -5px;
 }
 
-.card-img {
-     height: 75px;
-     width: 75px;
+.circle-icon i {
+  position: absolute;
+  top: 50%;
+  color: rgb(252, 252, 252);
+  font-size: 7vw;
 }
-
-.card-icon {
-    font-size: 50px;
-    color: white;
-
-}
-
 
 .card1 p {
-    position: relative;
-    top: -40px;
-    font-weight: bold;
-
+  font-weight: bold;
+  font-size: 3vw;
 }
 
 .card1:hover .circle-icon {
-    background-color: #df1425;
+  background-color: #df1425;
 }
 
+/* Tablet and Larger Styles */
+@media (min-width: 625px) {
+  .card-item {
+    top: 58%;
+  }
+  .circle-icon {
+    top: -18vw;
+  }
+}
+
+/* Tablet and Larger Styles */
+@media (min-width: 800px) {
+  .card-item {
+    top: 58%;
+    /* left: 0px; */
+  }
+
+  .circle-icon {
+    top: -13vw;
+    left: 1px;
+    width: 85%;
+    padding-top: 85%;
+  }
+
+  .card1 p {
+    font-size: 2.5vw;
+  }
+}

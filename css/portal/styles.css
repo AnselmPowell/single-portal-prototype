@@ -1,0 +1,131 @@
+/* -- PORTAL DASHBOARD STYLE SHEET --  */
+
+/* -- TABLE OF CONTENT -- */
+
+/* - ROOT VARIABLES */
+/* - BACKGROUND IMAGE HEADER */
+/*    - CARD STYLES */
+
+/* ----- Media Queries ----- */
+/* ## TABLET STYLES */
+/* ## LAPTOP STYLES */
+/* ## DESKTOP STYLES */
+
+
+
+
+/* ROOT VARIABLES */
+
+:root {
+  --mobile-max: 768px;
+  --tablet-max: 1024px;
+  --laptop-min: 1025px;
+  --laptop-max: 1440px;
+  --desktop-min: 1441px;
+
+  --primary-color: #AA0D1B;
+  --secondary-color: #164B63;
+  --bg-color: #f5f5f5;
+
+  --text-color: black;
+  --box-shadow: 0px 0px 46px 0px rgba(99, 99, 99, 0.15);
+  --border-radius: 0.8rem;
+  --btn-padding: 10px 20px;
+}
+
+
+
+/*   ## MOBILE(DEFAULT) STYLES (up to 768px wide) */
+/*      Your mobile/default styles go here */
+
+/* BACKGROUND IMAGE HEADER  */
+.home-bg-image {
+  background-image: url(/assets/img/children_running.png);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.home-bg-image::after {
+  content: "";
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.779)
+  );
+}
+
+.home-bg-image h1,
+.home-bg-image p {
+  color: white;
+  position: relative;
+  bottom: -120px;
+  z-index: 2;
+}
+
+.container h1 {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* CARD STYLES  */
+.card {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.card h2 {
+  font-weight: bold;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+
+/*   ## TABLET STYLES (769px to 1024px wide) */
+@media screen and (min-width: var(--mobile-max)) and (max-width: var(--tablet-max)) {
+  /*    Your tablet-specific styles go here */
+  /* - {NAME} STYLES */
+}
+
+
+
+/*   ## LAPTOP STYLES (1025px to 1440px wide) */
+@media screen and (min-width: var(--laptop-min)) and (max-width: var(--laptop-max)) {
+  /*    Your laptop-specific styles go here */
+  /* - {NAME} STYLES */
+}
+
+
+
+/*   ## DESKTOP STYLES (1441px wide and above) */
+@media screen and (min-width: var(--desktop-min)) {
+  /*    Your desktop-specific styles go here */
+  /* - {NAME} STYLES */
+}
+
+
+
+@media (min-width: 625px) {
+  .card-container {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 800px) {
+  .home-bg-image h1,
+  p {
+    bottom: -150px;
+  }
+}

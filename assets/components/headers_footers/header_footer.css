@@ -1,138 +1,205 @@
+/* -- HEADER/FOOTER STYLE SHEET --  */
+
+/* -- TABLE OF CONTENT -- */
+
+/* - ROOT VARIABLES */
+/* - SPORT WALES HEADER 1 STYLE */
+/*    - Sport Wales Navigation  */
+/*    - Navigation list */
+/*    - CARD STYLES */
+/* - SPORT WALES FOOTER 1 STYLE */
+/*    - Footer Logo  */
+/*    - Acount Button Container */
+
+/* ----- Media Queries ----- */
+/* ## TABLET STYLES */
+/* - SPORT WALES FOOTER 1 STYLE */
+/* ## LAPTOP STYLES */
+/* - SPORT WALES FOOTER 1 STYLE */
+/* ## DESKTOP STYLES */
+/* - SPORT WALES FOOTER 1 STYLE */
+
+
+/* ROOT VARIABLES */
+
+
+:root {
+  --mobile-max: 768px;
+  --tablet-max: 1024px;
+  --laptop-min: 1025px;
+  --laptop-max: 1440px;
+  --desktop-min: 1441px;
+
+  --primary-color: #AA0D1B;
+  --secondary-color: #164B63;
+  --bg-color: #f5f5f5;
+
+  --text-color: black;
+  --box-shadow: 0px 0px 46px 0px rgba(99, 99, 99, 0.15);
+  --border-radius: 0.8rem;
+  --btn-padding: 10px 20px;
+}
+
+/* lang-picker */
 
 .lang-picker {
-    display: flex;
-    padding: 2px 5px;
-    font-size: 10px;
-    background-color: rgb(210, 208, 208);
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
+  display: flex;
+  padding: 5px 5px;
+  font-size: 10px;
+  background-color: rgb(210, 208, 208);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
 }
 
-.lang-picker span  {
-    margin-right: 2px;
+/*  lang-picker span */
+
+.lang-picker span {
+  margin-right: 2px;
 }
 
-
-
-.account-btn-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    margin-right: 10px ;
-    align-items: center;
+.lang-picker p {
+  margin-bottom: 0px;
 }
-
-.account-btn-primary {
-    background-color: #AA0D1B;
-    color: white;
-    padding: 5px 25px;
-    border-radius: 5px;
-}
-
-.account-btn-secondary {
-    background-color: white;
-    color: black;
-    padding: 5px 25px;
-    border-radius: 5px;
-}
-
-
 
 /* SPORT WALES HEADER 1 STYLE */
 
+/* Sport Wales Header */
+
 .sw_header1 {
-    display: flex;
-    background-color: #164B63;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 10px;
-    align-items: center;
-    width: 100%;
-} 
-
-.sw_nav  {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 40px;
-   
-
+  display: flex;
+  background-color: #164b63;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
+
+/* Sport Wales Navigation */
+.sw_nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.sw_nav ul {
+  margin-bottom: 0px;
+}
+
+/* Navigation list */
+
 .sw_nav ul li {
-    display: inline-block;
-    list-style: none;
-    position: relative;
-    margin: 0 10px;
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  margin: 0 10px;
 }
 
 .sw_nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
 }
-
-
 
 
 .account {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin: 5px;
 }
+
 
 .account i {
-    margin: 4px;
+  margin: 4px;
 }
-
 
 
 /* SPORT WALES FOOTER 1 STYLE */
 
 .sw_footer1 {
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #164B63;
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px 0px;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #164b63;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 0px;
 }
 
+/* Footer Logo */
 .sw_footer1 .sw_logo {
-    width: 180px;
+  width: 180px;
 }
 
 .sw_footer-nav {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: baseline; */
-    margin-left: 40%;
-
-}
-
-.sw_footer-nav ul {
-    list-style: none;
-    margin: 0 30px;
-}
-
-.sw_footer-nav ul li {
-    list-style: none;
-    position: relative;
-    margin: 0 10px;
+  position: relative;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
 }
 
 .sw_footer-nav ul li a {
-    color: rgba(255, 255, 255, 0.539);
-    text-decoration: none;
-    font-size: 8px;
+  color: rgba(255, 255, 255, 0.539);
+  text-decoration: none;
+  font-size: 8px;
 }
 
 .sw_footer-nav ul .title-list {
-    color: white;
-    font-size: 8px;
+  color: white;
+  font-size: 8px;
 }
 
+/* Acount Button Container */
+
+.account-btn-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+/* Media Queries */
+
+
+/*   ## TABLET STYLES (769px to 1024px wide) */
+@media screen and (min-width: var(--mobile-max)) and (max-width: var(--tablet-max)) {
+  /*    Your tablet-specific styles go here */
+
+
+  /* SPORT WALES FOOTER 1 STYLE */
+  .sw_footer1 {
+    margin-top: 70px;
+  }
+}
+
+
+/*   ## LAPTOP STYLES (1025px to 1440px wide) */
+@media screen and (min-width: var(--laptop-min)) and (max-width: var(--laptop-max)) {
+  /*    Your laptop-specific styles go here */
+
+
+  /* SPORT WALES FOOTER 1 STYLE */
+  .sw_footer1 {
+    margin-top: 100px;
+  }
+}
+
+
+/*   ## DESKTOP STYLES (1441px wide and above) */
+@media screen and (min-width: var(--desktop-min)) {
+  /*    Your desktop-specific styles go here */
+
+
+  /* SPORT WALES FOOTER 1 STYLE */
+  .sw_footer1 {
+    margin-top: 120px;
+  }
+}
