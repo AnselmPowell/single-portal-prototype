@@ -124,17 +124,23 @@
 .sw_footer1 {
   margin-top: 50px;
   width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #164b63;
   font-family: "Montserrat", sans-serif;
   padding: 20px 0px;
+  grid-template-areas: 
+    "account"
+    "nav"
+    "logo";
 }
 
 /* Footer Logo */
 .sw_footer1 .sw_logo {
   width: 180px;
+  grid-area: logo;
+  margin: 0px auto;
 }
 
 .sw_footer-nav {
@@ -143,6 +149,11 @@
   display: flex;
   justify-content: space-between;
   margin-left: 20px;
+  grid-area: nav;
+}
+
+.sw_footer-nav ul {
+  margin: 10px;
 }
 
 .sw_footer-nav ul li a {
@@ -164,10 +175,28 @@
   gap: 10px;
   margin-right: 10px;
   align-items: center;
+  grid-area: account;
 }
 
 /* Media Queries */
 
+
+/*   ## TABLET STYLES (769px or bigger) */
+@media screen and (min-width: 769px) {
+  /*    Your tablet-specific styles go here */
+
+  .sw_footer1 {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .sw_footer1 .sw_logo {
+    margin: 0px 0px;
+  }
+
+
+}
 
 /*   ## TABLET STYLES (769px to 1024px wide) */
 @media screen and (min-width: var(--mobile-max)) and (max-width: var(--tablet-max)) {

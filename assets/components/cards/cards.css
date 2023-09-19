@@ -28,6 +28,8 @@
 .card-item {
   position: absolute;
   text-align: center;
+  height: 100%;
+  width: 100%;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -35,15 +37,17 @@
 
 .circle-icon {
   display: flex;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   justify-content: center;
   text-align: center;
   background-color: #aa0d1b;
   border-radius: 50%;
-  width: 110%;
-  padding-top: 110%;
+  width: 66%;
+  padding-top: 66%;
   position: absolute;
-  top: -16vw;
-  left: -5px;
 }
 
 .circle-icon i {
@@ -56,6 +60,8 @@
 .card1 p {
   font-weight: bold;
   font-size: 3vw;
+  position: relative;
+  top: 35%;
 }
 
 .card1:hover .circle-icon {
@@ -67,25 +73,10 @@
   .card-item {
     top: 58%;
   }
-  .circle-icon {
-    top: -18vw;
-  }
 }
 
 /* Tablet and Larger Styles */
 @media (min-width: 800px) {
-  .card-item {
-    top: 58%;
-    /* left: 0px; */
-  }
-
-  .circle-icon {
-    top: -13vw;
-    left: 1px;
-    width: 85%;
-    padding-top: 85%;
-  }
-
   .card1 p {
     font-size: 2.5vw;
   }
