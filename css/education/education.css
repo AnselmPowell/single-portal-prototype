@@ -109,6 +109,7 @@
      top: 50px;
 }
 
+
 .img_shade {
   position: absolute;
   width: 100%;
@@ -161,14 +162,25 @@
 }
 .progession_steps_container .img {
   background-color: #164B63;
-  height: 300px;
+  
 }
 
 .pupil_Assessment_container .img {
   background-color: #e6e6e6;
-  height: 300px;
 }
-  
+
+.progession_steps_container .img,
+.pupil_Assessment_container .img {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img i {
+  font-size: 10vw;
+  color: rgba(0, 0, 0, 0.228);
+}
   
 .btn_container {
   display: flex;
@@ -231,6 +243,10 @@
    .progession_steps_container .img,
    .pupil_Assessment_container .img {
     height: auto;
+   }
+
+   .img i {
+    font-size: 4vw; 
    }
   }
   
