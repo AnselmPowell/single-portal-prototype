@@ -26,15 +26,22 @@
 /* ROOT VARIABLES */
 
 :root {
-  --primary-color: red;
-  --secondary-color: white;
-  --background-color: #f5f5f5;
+  --mobile-max: 768px;
+  --tablet-max: 1024px;
+  --laptop-min: 1025px;
+  --laptop-max: 1440px;
+  --desktop-min: 1441px;
+
+  --primary-color: #AA0D1B;
+  --secondary-color: #164B63;
+  --bg-color: #f5f5f5;
 
   --text-color: black;
   --box-shadow: 0px 0px 46px 0px rgba(99, 99, 99, 0.15);
   --border-radius: 0.8rem;
   --btn-padding: 10px 20px;
 }
+
 
 *,
 *::before,
@@ -184,7 +191,22 @@ a:visited {
   margin: 0 5px;
 }
 
+/* Breadcrumb styles */
 
+.breadcrumb-item a {
+  color: rgba(0, 0, 0, 0.39);
+  /* color: var(--secondary-color); */
+}
+
+.breadcrumb-item a:hover {
+  color: #164B63;
+  font-weight: 400;
+}
+
+.breadcrumbs .breadcrumb-item.active {
+   color: #164B63;
+   font-weight: 200;
+}
 
 /*   ## TABLET STYLES (769px to 1024px wide) */
 @media screen and (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {
