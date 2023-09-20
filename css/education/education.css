@@ -147,26 +147,33 @@
 .pupil_Assessment_container {
       display: grid;
       grid-template-columns: 1fr;
-      
-
+  
 }
 
 .progession_steps,
 .pupil_Assessment {
   padding: 25px;
+  border-radius: 15px 15px 0px 0px ;
 }
 
 .progession_steps {
   background-color: #2c5d74;
   color: white;
+  border-radius: 15px 15px 0px 0px ;
 }
+
+.pupil_Assessment {
+  border-radius: 0px 0px 15px 15px ;
+}
+
 .progession_steps_container .img {
   background-color: #164B63;
-  
+  border-radius: 0px 0px 15px 15px ;
 }
 
 .pupil_Assessment_container .img {
   background-color: #e6e6e6;
+  border-radius: 15px 15px 0px 0px ;
 }
 
 .progession_steps_container .img,
@@ -243,6 +250,20 @@
    .progession_steps_container .img,
    .pupil_Assessment_container .img {
     height: auto;
+   }
+
+   .progession_steps_container .img{
+    border-radius: 0px 15px 15px 0px ;
+   }
+   .pupil_Assessment_container .img {
+    border-radius: 15px 0px 0px 15px ;
+   }
+
+   .progession_steps {
+    border-radius: 15px 0px 0px 15px ;
+   }
+   .pupil_Assessment {
+    border-radius: 0px 15px 15px 0px ;
    }
 
    .img i {
