@@ -193,6 +193,14 @@ a:visited {
 
 /* Breadcrumb styles */
 
+.breadcrumbs {
+  position: relative;
+  left: -10px;
+}
+.breadcrumbs li {
+  font-size: 16px
+}
+
 .breadcrumb-item a {
   color: rgba(0, 0, 0, 0.39);
   /* color: var(--secondary-color); */
