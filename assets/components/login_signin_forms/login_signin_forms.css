@@ -38,7 +38,6 @@
 
 /* Style password input box */
 .password_input {
-  display: flex;
   align-items: center;
 }
 
@@ -56,6 +55,11 @@
 
 .password_input .fa-eye:hover {
   color: rgba(18, 18, 18, 0.95);
+}
+
+.invalid-user_pass.show,
+.invalid-user_taken.show {
+   display: block !important;
 }
 
 /* Media Queries */

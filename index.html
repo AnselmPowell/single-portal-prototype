@@ -73,28 +73,38 @@
             <!-- LOGIN FORM  -->
             <div class="login_signin-container ">
                 
-                <form id="login-form" class="login_signin-form login">
+                <form id="login-form" class="login_signin-form login login-validation" novalidate>
                     <h2>Log in to your account</h2>
-                    <label for="username">Username or email address</label>
-                    <input type="text" id="username_login" name="username" value=" " required>
-                    <label for="password">Password:</label>
-                    <div class="password_input">
-                        <input type="password" id="password_login" name="password" value="" required>
-                        <i class="fa-regular fa-eye"></i>
+                    <div class="form-outline" >
+                        <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_pass">Username or password is incorrect please try again </div>
+                        <label for="username">Username or email address</label>
+                        <input type="text" class="form-control"  name="username"  required>
+                        <div class="invalid-feedback">Please enter your username or email</div>
+                        </div>
+                    <div class="">
+                        <label for="password">Password:</label>
+                        <div class="form-outline password_input">
+                            <input type="password" class="form-control" name="password" value="" required>
+                            <div class="invalid-feedback">Please enter your password</div>
+                            <!-- <i class="fa-regular fa-eye"></i> -->
+                        </div>
                     </div>
-                    
+
                     <div class="or_separator">
                         <span></span>
                         <p>or</p>
                         <span></span>
                     </div>
+
                     <div class="social-login-container">
                         <button class="social-button google"><i class="fa-brands fa-google"></i></button>
                         <button class="social-button facebook"><i class="fa-brands fa-facebook"></i></button>
                         <button class="social-button apple"><i class="fa-brands fa-apple"></i></button>
                     </div>
-                    <div class="btn btn-danger" onclick="login()" type="submit"><a style="color: white;" >Login</a></div>
-                </form>  
+                    
+                    <button class="btn btn-danger" type="submit"><a style="color: white;" >Login</a></button>
+                </div>
+                </form>    
             </div>
 
             <div class="vertical_separator"> </div>
@@ -102,14 +112,21 @@
             <!-- SIGNIN FORM  -->
 
             <div class="login_signin-container">
-                <form id="signup-form" class="login_signin-form signin">
+                <form id="signup-form" class="login_signin-form signin signup-validation" novalidate>
                     <h2>Register account</h2>
-                    <label for="username">Username or email address</label>
-                    <input type="text" id="username_signup" name="username" value="  " required>
-                    <label for="password">Password:</label>
-                    <div class="password_input">
-                        <input type="password" id="password_signup" name="password" value="" required>
-                        <i class="fa-regular fa-eye"></i>
+                    <div class="form-outline">
+                        <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_taken">Username or email is already taken </div>
+                        <label for="username">Username or email address</label>
+                        <input type="text" class="form-control" id="username_signup" name="username" value="" required>
+                        <div class="invalid-feedback">Please choose a username or email</div>
+                    </div>
+                    <div class="form-outline">
+                        <label for="password">Password:</label>
+                        <div class="password_input">
+                            <input type="password" class="form-control" id="password_signup" name="password"  required>
+                            <div class="invalid-feedback">Please choose a password</div>
+                            <!-- <i class="fa-regular fa-eye"></i> -->
+                        </div>
                     </div>
                     
                     <div class="or_separator">
@@ -122,7 +139,7 @@
                         <button class="social-button facebook"><i class="fa-brands fa-facebook"></i> <p>Sign up with Facebook</p>  </button>
                         <button class="social-button apple"><i class="fa-brands fa-apple"></i> <p>Sign up with Apple</p>   </button>
                     </div>
-                    <div class="btn btn-danger" onclick="createAccount()" type="submit"><a style="color: white;">Register</a></div>
+                    <button class="btn btn-danger" type="submit"><a style="color: white;" >Sign up</a></button>
                 </form>  
             </div>
 
