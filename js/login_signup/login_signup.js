@@ -64,11 +64,9 @@ const createAccount = ()=> {
 
                 document.querySelector(".invalid-user_pass").classList.add('show')
                 console.log(userAccount.password, "Password doest exist")
-                console.log(password)
+                loginForm.querySelector("input[name='password']").value = ""
                 return;
             }
-
-            if(userAccount && userAccount.password == password)
             // If the user's login is successful, redirect them to the portal page.
             window.location.href = "portal.html";
       

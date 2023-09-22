@@ -123,6 +123,12 @@
 }
 
 
+@media (min-width: 625px) {
+  .card-container {
+    padding-top: 50px;
+  }
+}
+
 /*   ## TABLET STYLES (769px or Bigger) */
 @media screen and (min-width: 769px)  {
   /*    Your tablet-specific styles go here */
@@ -131,14 +137,24 @@
     height: 80%;
     width: 80%;
   }
+
+  .home-bg-image h1,
+  p {
+    bottom: -150px;
+  }
 }
 
 
 
-/*   ## LAPTOP STYLES (1025px to 1440px wide) */
-@media screen and (min-width: var(--laptop-min)) and (max-width: var(--laptop-max)) {
+/*   ## LAPTOP STYLES (1025px or Bigger) */
+@media screen and (min-width: var(--laptop-min)) {
   /*    Your laptop-specific styles go here */
   /* - {NAME} STYLES */
+  .map_container {
+    padding-top: 60px;
+    height: 80%;
+    width: 80%;
+  }
 }
 
 
@@ -150,16 +166,3 @@
 }
 
 
-
-@media (min-width: 625px) {
-  .card-container {
-    padding-top: 50px;
-  }
-}
-
-@media (min-width: 800px) {
-  .home-bg-image h1,
-  p {
-    bottom: -150px;
-  }
-}
