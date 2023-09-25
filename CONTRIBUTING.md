@@ -34,3 +34,7 @@ It can also be helpful to write a prefix in your brief summary of your commit to
 6. In your IDE's terminal type 'git clone' followed by the URL you copied.
 7. Press Enter.
 8. Your local clone will now be made.
+
+## Content guidance
+
+- Follow the [GDS convention of naming services](https://www.gov.uk/service-manual/design/naming-your-service).
