@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* -- GLOBAL STYLE SHEET --  */
 
 
@@ -14,6 +16,7 @@
 /* - UTILS STYLES */
 /*    - Hover Styles */
 /*    - Separator */
+/*    - 'Test' Banner */
 
 /* ----- Media Queries ----- */
 /* ## TABLET STYLES */
@@ -214,6 +217,27 @@ a:visited {
 .breadcrumbs .breadcrumb-item.active {
    color: #164B63;
    font-weight: 200;
+}
+
+
+/* test banner */
+
+#test_banner {
+  padding: 10px;
+  border-bottom: 1px solid rgb(186, 186, 186);
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(71, 71, 71);
+}
+
+#banner_test_flag {
+  background-color: #1d70b8;
+  padding: 0.25rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-right: 7px;
 }
 
 /*   ## TABLET STYLES (769px to 1024px wide) */
