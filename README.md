@@ -14,6 +14,7 @@ This is a frontend prototype built to test a single sign-on (SSO) portal where u
 - <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="JavaScript logo" width="20px" height="20px" /> JavaScript
 ### Libraries/Frameworks
 - <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap logo" width="20px" height="20px" /> Bootstrap
+- Nunjucks templating
 - Font Awesome
 - <img src="https://github.com/devicons/devicon/blob/master/icons/jquery/jquery-plain-wordmark.svg" alt="jQuery logo" width="20px" height="20px" /> jQuery 
 - Google fonts
