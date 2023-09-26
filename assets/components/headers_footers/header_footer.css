@@ -85,7 +85,7 @@
   display: flex;
   background-color: #164b63;
   font-family: "Montserrat", sans-serif;
-  padding: 0 10px;
+  padding: 0 20px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -137,6 +137,7 @@
 /* SPORT WALES FOOTER 1 STYLE */
 
 .sw_footer1 {
+  padding: 20px 20px;
   margin-top: 50px;
   width: 100%;
   display: grid;
@@ -144,7 +145,6 @@
   justify-content: center;
   background-color: #164b63;
   font-family: "Montserrat", sans-serif;
-  padding: 20px 0px;
   grid-template-areas: 
     "account"
     "nav"
