@@ -1,166 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ensures no search engine will display page: -->
     <meta name="robots" content="noindex, nofollow">
     <title>Sport Wales Portal</title>
-    <link rel="icon" href="assets/icons/sw_favicon.ico" type="image/x-icon">  
+    <link rel="icon" href="../assets/icons/sw_favicon.ico" type="image/x-icon">  
     <!-- FONTAWESOME  -->
     <script src="https://kit.fontawesome.com/937b7e56e6.js" crossorigin="anonymous"></script>
-
     <!-- FLAGS -->
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
-/>
-
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+        />
     <!-- GOOGLE FONTS  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <!-- STYLE SHEETS  -->
-    <link rel="stylesheet" type="text/css" href="css/global/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/single_signon/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/components/headers_footers/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="assets/components/login_signin_forms/login_signin_forms.css">    
-    <link rel="stylesheet" type="text/css" href="assets/components/buttons/buttons.css">
-
-
+    <link rel="stylesheet" type="text/css" href="../css/global/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/single_signon/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/portal/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/components/headers_footers/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="../assets/components/login_signin_forms/login_signin_forms.css">    
+    <link rel="stylesheet" type="text/css" href="../assets/components/buttons/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/components/cards/cards.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/booking/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/components/headers_footers/header_footer.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/education/education.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/components/login_signin_forms/login_signin_forms.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/components/buttons/buttons.css"/>
     <!-- THIRD PARTY CDNs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    
+    <!-- Add your common meta tags, stylesheets, and scripts here -->
+    <title>Sport Wales Portal</title>
 </head>
-
-<!-- ENGLISH TRANSLATION -->
-
 <body>
-   <div class="EN show">
-     <!-- SPORT WALES HEADER 1  -->
-    <div class="sw_header1">
+    <!-- navbar -->
+      <!-- SPORT WALES HEADER 1  -->
+     <div class="sw_header1">
         <div class="sw_logo">
-            <a href="index.html"><img src="assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+            <a href="index.html"><img src="/assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
         </div>
 
         <div class="sw_nav">
             <ul class="hover-list">
-                <li><a href="pages/portal.html">Home</a></li>
-                <li><a href="pages/funding.html">Funding</a></li>
-                <li><a href="pages/booking.html">Booking</a></li>
-                <li><a href="pages/education.html">Learning</a></li>
+                <li><a href="../pages/portal.html">Home</a></li>
+                <li><a href="../pages/funding.html">Funding</a></li>
+                <li><a href="../pages/booking.html">Booking</a></li>
+                <li><a href="../pages/education.html">Learning</a></li>
             </ul>
         </div>
 
         <div class="account">
             <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
             <i  style="color: white;" class="fa-solid fa-user"></i>
-            <button onclick="press_en()" class="lang-picker_en" type="button">
+            <div class="lang-picker">
                 <span class="fi fi-gb"></span>
                 <p style="color: black;">EN</p>
                 <i style="color: black;" class="fa-solid fa-chevron-down"></i>
-            </button>
+            </div>
         </div>
     </div>
 
-    <div class="main">
         <div class="container-fluid" id="test_banner">
-            <span id="banner_test_flag">TEST</span>
-            <span id="banner_test_text">This website is a test. Please do not input any personal information.</span>
-        </div>
-        <div class="sw_title">
-            <h1 class="font-weight-bold mt-5 mb-5">Welcome to Sport Wales Portal</h1> 
-        </div>
-        <div class="single-portal-layout">
+    <span id="banner_test_flag">TEST</span>
+    <span id="banner_test_text">This website is a test. Please do not input any personal information.</span>
+</div>
+        <!-- NUNJUCKS CHILD TEMPLATE CONTENT -->
+        
 
-            <!-- LOGIN FORM  -->
-            <div class="login_signin-container ">
-                
-                <form id="login-form" class="login_signin-form login login-validation" novalidate>
-                    <h2>Log in to your account</h2>
-                    <div class="form-outline" >
-                        <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_pass">Username or password is incorrect please try again </div>
-                        <label for="username">Username or email address</label>
-                        <input type="text" class="form-control"  name="username"  required>
-                        <div class="invalid-feedback">Please enter your username or email</div>
-                        </div>
-                    <div class="">
-                        <label for="password">Password:</label>
-                        <div class="form-outline password_input">
-                            <input type="password" class="form-control" name="password" value="" required>
-                            <div class="invalid-feedback">Please enter your password</div>
-                            <!-- <i class="fa-regular fa-eye"></i> -->
-                        </div>
-                    </div>
-
-                    <div class="or_separator">
-                        <span></span>
-                        <p>or</p>
-                        <span></span>
-                    </div>
-
-                    <div class="social-login-container">
-                        <button class="social-button google"><i class="fa-brands fa-google"></i></button>
-                        <button class="social-button facebook"><i class="fa-brands fa-facebook"></i></button>
-                        <button class="social-button apple"><i class="fa-brands fa-apple"></i></button>
-                    </div>
-                    
-                    <button class="btn btn-danger" type="submit"><a style="color: white;" >Login</a></button>
+    <div class="main">
+            <div class="container">
+                <div class="sw_title">
+                    <h1 class="font-weight-bold mt-5 mb-5">Welcome to Sport Wales Portal</h1> 
                 </div>
-                </form>   
-                <div class="vertical_separator"> </div>
+                <div class="single-portal-layout">
+                    <!-- LOGIN FORM  -->
+                    <div class="login_signin-container ">
+                        
+                        <form id="login-form" class="login_signin-form login login-validation" novalidate>
+                            <h2>Log in to your account</h2>
+                            <div class="form-outline" >
+                                <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_pass">Username or password is incorrect please try again </div>
+                                <label for="username">Username or email address</label>
+                                <input type="text" class="form-control"  name="username"  required>
+                                <div class="invalid-feedback">Please enter your username or email</div>
+                                </div>
+                            <div class="">
+                                <label for="password">Password:</label>
+                                <div class="form-outline password_input">
+                                    <input type="password" class="form-control" name="password" value="" required>
+                                    <div class="invalid-feedback">Please enter your password</div>
+                                    <!-- <i class="fa-regular fa-eye"></i> -->
+                                </div>
+                            </div>
 
-            <!-- SIGNIN FORM  -->
+                            <div class="or_separator">
+                                <span></span>
+                                <p>or</p>
+                                <span></span>
+                            </div>
 
-            <div class="login_signin-container">
-                <form id="signup-form_en" class="login_signin-form signin signup-validation" novalidate>
-                    <h2>Register account</h2>
-                    <div class="form-outline">
-                        <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_taken">Username or email is already taken </div>
-                        <label for="username">Username or email address</label>
-                        <input type="text" class="form-control" id="username_signup_en" name="username" value="" required>
-                        <div class="invalid-feedback">Please choose a username or email</div>
-                    </div>
-                    <div class="form-outline">
-                        <label for="password">Password:</label>
-                        <div class="password_input">
-                            <input type="password" class="form-control" id="password_signup_en" name="password"  required>
-                            <div class="invalid-feedback">Please choose a password</div>
-                            <!-- <i class="fa-regular fa-eye"></i> -->
+                            <div class="social-login-container">
+                                <button class="social-button google"><i class="fa-brands fa-google"></i></button>
+                                <button class="social-button facebook"><i class="fa-brands fa-facebook"></i></button>
+                                <button class="social-button apple"><i class="fa-brands fa-apple"></i></button>
+                            </div>
+                            
+                            <button class="btn btn-danger" type="submit"><a style="color: white;" >Login</a></button>
                         </div>
-                    </div>
-                    
-                    <div class="or_separator">
-                        <span></span>
-                        <p>or</p>
-                        <span></span>
-                    </div>
-                    <div class="social-login-long-container">
-                        <button class="social-button google"><i class="fa-brands fa-google"></i> <p>Sign up with Google</p>  </button>
-                        <button class="social-button facebook"><i class="fa-brands fa-facebook"></i> <p>Sign up with Facebook</p>  </button>
-                        <button class="social-button apple"><i class="fa-brands fa-apple"></i> <p>Sign up with Apple</p>   </button>
-                    </div>
-                    <button class="btn btn-danger" type="submit"><a style="color: white;" >Sign up</a></button>
-                </form>  
-            </div> 
-            </div>
+                        </form>   
+                        <div class="vertical_separator"> </div>
 
+                    <!-- SIGNIN FORM  -->
+
+                    <div class="login_signin-container">
+                        <form id="signup-form" class="login_signin-form signin signup-validation" novalidate>
+                            <h2>Register account</h2>
+                            <div class="form-outline">
+                                <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_taken">Username or email is already taken </div>
+                                <label for="username">Username or email address</label>
+                                <input type="text" class="form-control" id="username_signup" name="username" value="" required>
+                                <div class="invalid-feedback">Please choose a username or email</div>
+                            </div>
+                            <div class="form-outline">
+                                <label for="password">Password:</label>
+                                <div class="password_input">
+                                    <input type="password" class="form-control" id="password_signup" name="password"  required>
+                                    <div class="invalid-feedback">Please choose a password</div>
+                                    <!-- <i class="fa-regular fa-eye"></i> -->
+                                </div>
+                            </div>
+                            
+                            <div class="or_separator">
+                                <span></span>
+                                <p>or</p>
+                                <span></span>
+                            </div>
+                            <div class="social-login-long-container">
+                                <button class="social-button google"><i class="fa-brands fa-google"></i> <p>Sign up with Google</p>  </button>
+                                <button class="social-button facebook"><i class="fa-brands fa-facebook"></i> <p>Sign up with Facebook</p>  </button>
+                                <button class="social-button apple"><i class="fa-brands fa-apple"></i> <p>Sign up with Apple</p>   </button>
+                            </div>
+                            <button class="btn btn-danger" type="submit"><a style="color: white;" >Sign up</a></button>
+                        </form>  
+                    </div> 
+                    </div>
+                </div>
+            </div>
         </div>
 
-
-    <!-- SPORT WALES FOOTER 1  -->
-
-    <div class="home sw_footer1">
+    
+        <div class="home sw_footer1">
         <div class="sw_logo">
           <a href="index.html"
             ><img
-              src="assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg"
+              src="/assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg"
               alt="Sport Wales Logo"
           /></a>
         </div>
@@ -186,177 +185,5 @@
           <div class="btn btn-light">Log in</div>
         </div>
       </div>
-    </div>
-    
-
-<!-- WELSH TRANSLATION -->
-
-
-    <div class="CY">
-        <!-- SPORT WALES HEADER 1  -->
-        <div class="sw_header1">
-           <div class="sw_logo">
-               <a href="index.html"><img src="assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
-           </div>
-    
-           <div class="sw_nav">
-               <ul class="hover-list">
-                   <li><a href="pages/portal.html">Cartref</a></li>
-                   <li><a href="pages/funding.html">
-                    Ariannu</a></li>
-                   <li><a href="pages/booking.html">Archebu</a></li>
-                   <li><a href="pages/education.html">
-                    Dysgu</a></li>
-               </ul>
-           </div>
-    
-           <div class="account">
-               <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
-               <i  style="color: white;" class="fa-solid fa-user"></i>
-               <button onclick="press_cy()" class="lang-picker_cy" type="button">
-                   <span class="fi fi-gb"></span>
-                   <p style="color: black;">CY</p>
-                   <i style="color: black;" class="fa-solid fa-chevron-down"></i>
-               </button>
-            </div>
-           </div>
-    
-       <div class="main">
-        <div class="container-fluid" id="test_banner">
-            <span id="banner_test_flag">PRAWF</span>
-            <span id="banner_test_text">Mae'r wefan hon yn brawf. Peidiwch â mewnbynnu unrhyw wybodaeth bersonol.</span>
-        </div>
-           <div class="sw_title">
-               <h1 class="font-weight-bold mt-5 mb-5">Croeso i Borth Chwaraeon Cymru</h1> 
-           </div>
-           <div class="single-portal-layout">
-    
-               <!-- LOGIN FORM  -->
-               <div class="login_signin-container ">
-                   
-                   <form id="login-form_cy" class="login_signin-form login login-validation" novalidate>
-                       <h2>
-                        Mewngofnodwch i'ch cyfrif</h2>
-                       <div class="form-outline" >
-                           <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_pass">
-                            Enw defnyddiwr neu gyfrinair yn anghywir ceisiwch eto</div>
-                           <label for="username">Enw defnyddiwr neu gyfeiriad e-bost</label>
-                           <input type="text" class="form-control"  name="username"  required>
-                           <div class="invalid-feedback">Rhowch eich enw defnyddiwr neu e-bost</div>
-                           </div>
-                       <div class="">
-                           <label for="password">Cyfrinair:</label>
-                           <div class="form-outline password_input">
-                               <input type="password" class="form-control" name="password" id="password_login_en" value="" required>
-                               <div class="invalid-feedback">Rhowch eich cyfrinair</div>
-                               <!-- <i class="fa-regular fa-eye"></i> -->
-                           </div>
-                       </div>
-    
-                       <div class="or_separator">
-                           <span></span>
-                           <p>neu</p>
-                           <span></span>
-                       </div>
-    
-                       <div class="social-login-container">
-                           <button class="social-button google"><i class="fa-brands fa-google"></i></button>
-                           <button class="social-button facebook"><i class="fa-brands fa-facebook"></i></button>
-                           <button class="social-button apple"><i class="fa-brands fa-apple"></i></button>
-                       </div>
-                       
-                       <button class="btn btn-danger" type="submit"><a style="color: white;" >
-                        Mewngofnodi</a></button>
-                   </div>
-                   </form>   
-                   <div class="vertical_separator"> </div>
-    
-               <!-- SIGNIN FORM  -->
-    
-               <div class="login_signin-container">
-                   <form id="signup-form" class="login_signin-form signin signup-validation" novalidate>
-                       <h2>Cofrestru cyfrif</h2>
-                       <div class="form-outline">
-                           <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_taken">Mae enw defnyddiwr neu e-bost eisoes wedi'i gymryd</div>
-                           <label for="username">
-                            Enw defnyddiwr neu gyfeiriad e-bost</label>
-                           <input type="text" class="form-control" id="username_signup_cy" name="username" value="" required>
-                           <div class="invalid-feedback">Dewiswch enw defnyddiwr neu e-bost</div>
-                       </div>
-                       <div class="form-outline">
-                           <label for="password">Cyfrinair:</label>
-                           <div class="password_input">
-                               <input type="password" class="form-control" id="password_signup_cy" name="password"  required>
-                               <div class="invalid-feedback">Dewiswch gyfrinair</div>
-                               <!-- <i class="fa-regular fa-eye"></i> -->
-                           </div>
-                       </div>
-                       
-                       <div class="or_separator">
-                           <span></span>
-                           <p>neu</p>
-                           <span></span>
-                       </div>
-                       <div class="social-login-long-container">
-                           <button class="social-button google"><i class="fa-brands fa-google"></i> <p>Cofrestrwch gyda Google</p>  </button>
-                           <button class="social-button facebook"><i class="fa-brands fa-facebook"></i> <p>Cofrestrwch gyda Facebook</p>  </button>
-                           <button class="social-button apple"><i class="fa-brands fa-apple"></i> <p>Cofrestrwch gyda  Apple</p>   </button>
-                       </div>
-                       <button class="btn btn-danger" type="submit"><a style="color: white;" >Cofrestrwch</a></button>
-                   </form>  
-               </div> 
-               </div>
-           </div>
-       
-    
-    
-    
-    
-       <!-- SPORT WALES FOOTER 1  -->
-    
-       <div class="home sw_footer1">
-           <div class="sw_logo">
-             <a href="index.html"
-               ><img
-                 src="assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg"
-                 alt="Sport Wales Logo"
-             /></a>
-           </div>
-     
-           <div class="sw_footer-nav">
-             <ul>
-               <li><a class="title-list" href="index.html">Sport Wales</a></li>
-               <li><a href="index.html">About us</a></li>
-               <li><a href="index.html">Main Website</a></li>
-               <li><a href="index.html">Where we are</a></li>
-             </ul>
-             <ul>
-               <li><a class="title-list" href="index.html">Find out more</a></li>
-               <li><a href="index.html">Privacy</a></li>
-               <li><a href="index.html">Accessibility</a></li>
-               <li><a href="index.html">Cookie policy</a></li>
-               <li><a href="index.html">Freedom of Information</a></li>
-             </ul>
-           </div>
-     
-           <div class="account-btn-container">
-             <div class="btn btn-danger">Register</div>
-             <div class="btn btn-light">Log in</div>
-           </div>
-         </div>
-    
-    
-         <script src="js/login_signup/login_signup.js"></script>
-       
-        </div>
-
-      <script src="js/translation/translation.js"></script>
-      <script src="js/login_signup/login_signup.js"></script>
-    
 </body>
-
-
-
 </html>
-
-

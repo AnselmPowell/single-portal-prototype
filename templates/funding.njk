@@ -1,0 +1,89 @@
+{% extends "base.njk" %}
+
+    {% block content %}
+        <main>
+            <div class="container">
+                
+                <nav  class="breadcrumbs"  aria-label="breadcrumb">
+                    <ol style="background-color: transparent;" class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="portal.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Funding and support</li>
+                    </ol>
+                </nav>
+                <!-- FIRST CARD: YOUR FUNDING APPLICATIONS-->
+                <h1 class="font-weight-bold mt-3 mb-5">Funding and support</h1>
+                <div class="card">
+                    <div class="container">
+                        <h2 class="font-weight-bold mt-5 pl-4 pb-4">Your funding applications</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="pl-4 pb-4">You applied for the <strong>Be Active Wales Fund</strong> on the <strong>18th October 2022.</strong></p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="pl-4 pb-4"><strong>Application status: </strong>Pending</p>
+                                <div class="pl-4">
+                                    <div class="btn btn-danger">View application</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SECOND CARD: COMMUNITY SPORT GRANTS -->
+                <div class="card">
+                    <div class="container">
+                        <h2 class="font-weight-bold mt-5 pl-4 pb-4">Community sport grants</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3 class="pl-4 pb-4">Be Active Wales Fund</h3>
+                                <p class="pl-4">To help you grow participation in sport and other activity.</p>
+                                <p class="pl-4">The Fund aims to help clubs and community organisations to:</p>
+                                <!-- TODO: Figure out why bullet points aren't coming up natively -->
+                                <ul class="pl-5">
+                                    <li>- reduce inequality</li>
+                                    <li>- create long-term sustainability</li>
+                                    <li>- introduce new ways of operating</li>
+                                </ul>
+                                <div class="pl-4">
+                                    <div class="btn btn-danger mt-2 mb-4">Apply</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="pl-4 pb-4">Crowdfunder</h3>
+                                <p class="pl-4">Get up to £15,000 to improve your community sports facility through crowdfunding.</p>
+                                <p class="pl-4">We'll match between 30% and 50% of the total you raise through crowdfunding.</p>
+                                <div class="pl-4">
+                                    <div class="btn btn-danger mt-3 mb-3">Apply on Crowdfunder</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- THIRD CARD: PERFORMANCE AND ELITE SPORT GRANTS-->
+                <div class="card">
+                    <div class="container">
+                        <h2 class="font-weight-bold mt-5 pl-4 pb-4">Elite Cymru</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3 class="pl-4 pb-4">Elite Cymru</h3>
+                                <p class="pl-4">For elite athletes in non-Olympic and non-Paralympic sport.</p>
+                                <p class="pl-4">You can apply by invitation only. Please speak to your governing body.</p>
+                                <div class="pl-4">
+                                    <div class="btn btn-outline-danger mt-2 mb-4">Application Requirements</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="pl-4 pb-4">Talent Cymru</h3>
+                                <p class="pl-4">For help with the cost of competing.</p>
+                                <p class="pl-4">Please speak to your governing body to apply.</p>
+                                <div class="pl-4">
+                                    <div class="btn btn-outline-danger mt-2 mb-4">Application Requirements</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+    {% endblock %}

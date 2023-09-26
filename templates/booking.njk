@@ -1,0 +1,65 @@
+{% extends "base.njk" %}
+
+{% block content %}
+    <div class="main">
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="breadcrumb">
+                <ol style="background-color: transparent;" class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="portal.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Manage bookings</li>
+                </ol>
+            </nav>
+            <h1 class="font-weight-bold mt-5 mb-5">Manage bookings</h1>
+        </div>
+        <div class="container">
+            <!-- FIRST CARD: YOUR BOOKINGS -->
+            <div class="card">
+                <p class="mt-5 ml-4 fs-1"><i class="fa-solid fa-2xl fa-book-bookmark blue-icon"></i></p>
+                <h2 class="mt-5 ml-2 pl-4 pb-4 font-weight-bold"><strong>Your bookings</strong></h2>
+                <div class="container ml-3 pb-4">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3 class="pb-3 font-weight-bold">Tennis</h3>
+                            <p class="mb-0 ">20th Jan, 14:00 - 15:00</p>
+                            <p>National Centre, Court 3</p>
+                            <div class="btn btn-outline-danger mb-3">Edit or delete</div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="pb-3 font-weight-bold">Squash</h3>
+                            <p class="mb-0">30th Jan, 06:30 - 07:30</p>
+                            <p>National Centre, Court 5</p>
+                            <div class="btn btn-outline-danger">Edit or delete</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECOND CARD: CARDIFF NATIONAL CENTRE -->
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mb-3">
+                <div class="card">
+                    <img class="img-fluid mb-4 image-radius" src="../assets/img/national-centre.png" alt="National Centre at Sport Wales">
+                    <div class="ml-4 pb-4">
+                        <h3 class="pb-3 font-weight-bold">Cardiff National Centre</h3>
+                        <p>Elite facitlities in Wales provide athletes with world-class performance environments.</p>
+                        <div class="btn btn-danger">Book National Centre</div>
+                    </div>
+                </div>
+            </div>
+            <!-- THIRD CARD: PLAS MENAI -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img class="img-fluid mb-4 image-radius" src="../assets/img/plas-menai.png" alt="National Centre at Sport Wales">
+                        <div class="ml-4 pb-4">
+                            <h3 class="pb-3 font-weight-bold">Plas Menai</h3>
+                            <p>Fun-packed activities and watersports courses for schools, groups, families, and invidiuals. </p>
+                            <div class="btn btn-danger">Book Plas Menai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
