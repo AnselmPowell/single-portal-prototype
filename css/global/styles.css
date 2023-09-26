@@ -250,6 +250,8 @@ a:visited {
   margin-right: 7px;
 }
 
+
+
 /*   ## TABLET STYLES (769px to 1024px wide) */
 @media screen and (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {
      /* Your tablet-specific styles go here */

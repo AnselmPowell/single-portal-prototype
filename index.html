@@ -119,18 +119,18 @@
             <!-- SIGNIN FORM  -->
 
             <div class="login_signin-container">
-                <form id="signup-form" class="login_signin-form signin signup-validation" novalidate>
+                <form id="signup-form_en" class="login_signin-form signin signup-validation" novalidate>
                     <h2>Register account</h2>
                     <div class="form-outline">
                         <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_taken">Username or email is already taken </div>
                         <label for="username">Username or email address</label>
-                        <input type="text" class="form-control" id="username_signup" name="username" value="" required>
+                        <input type="text" class="form-control" id="username_signup_en" name="username" value="" required>
                         <div class="invalid-feedback">Please choose a username or email</div>
                     </div>
                     <div class="form-outline">
                         <label for="password">Password:</label>
                         <div class="password_input">
-                            <input type="password" class="form-control" id="password_signup" name="password"  required>
+                            <input type="password" class="form-control" id="password_signup_en" name="password"  required>
                             <div class="invalid-feedback">Please choose a password</div>
                             <!-- <i class="fa-regular fa-eye"></i> -->
                         </div>
@@ -222,6 +222,10 @@
            </div>
     
        <div class="main">
+        <div class="container-fluid" id="test_banner">
+            <span id="banner_test_flag">PRAWF</span>
+            <span id="banner_test_text">Mae'r wefan hon yn brawf. Peidiwch â mewnbynnu unrhyw wybodaeth bersonol.</span>
+        </div>
            <div class="sw_title">
                <h1 class="font-weight-bold mt-5 mb-5">Croeso i Borth Chwaraeon Cymru</h1> 
            </div>
@@ -230,7 +234,7 @@
                <!-- LOGIN FORM  -->
                <div class="login_signin-container ">
                    
-                   <form id="login-form" class="login_signin-form login login-validation" novalidate>
+                   <form id="login-form_cy" class="login_signin-form login login-validation" novalidate>
                        <h2>
                         Mewngofnodwch i'ch cyfrif</h2>
                        <div class="form-outline" >
@@ -243,7 +247,7 @@
                        <div class="">
                            <label for="password">Cyfrinair:</label>
                            <div class="form-outline password_input">
-                               <input type="password" class="form-control" name="password" value="" required>
+                               <input type="password" class="form-control" name="password" id="password_login_en" value="" required>
                                <div class="invalid-feedback">Rhowch eich cyfrinair</div>
                                <!-- <i class="fa-regular fa-eye"></i> -->
                            </div>
@@ -261,7 +265,8 @@
                            <button class="social-button apple"><i class="fa-brands fa-apple"></i></button>
                        </div>
                        
-                       <button class="btn btn-danger" type="submit"><a style="color: white;" >Login</a></button>
+                       <button class="btn btn-danger" type="submit"><a style="color: white;" >
+                        Mewngofnodi</a></button>
                    </div>
                    </form>   
                    <div class="vertical_separator"> </div>
@@ -275,13 +280,13 @@
                            <div style="margin: 10px 0px;" class="invalid-feedback invalid-user_taken">Mae enw defnyddiwr neu e-bost eisoes wedi'i gymryd</div>
                            <label for="username">
                             Enw defnyddiwr neu gyfeiriad e-bost</label>
-                           <input type="text" class="form-control" id="username_signup" name="username" value="" required>
+                           <input type="text" class="form-control" id="username_signup_cy" name="username" value="" required>
                            <div class="invalid-feedback">Dewiswch enw defnyddiwr neu e-bost</div>
                        </div>
                        <div class="form-outline">
                            <label for="password">Cyfrinair:</label>
                            <div class="password_input">
-                               <input type="password" class="form-control" id="password_signup" name="password"  required>
+                               <input type="password" class="form-control" id="password_signup_cy" name="password"  required>
                                <div class="invalid-feedback">Dewiswch gyfrinair</div>
                                <!-- <i class="fa-regular fa-eye"></i> -->
                            </div>
