@@ -10,6 +10,7 @@
 /* Target the .single-portal-layout */
 .single-portal-layout {
   display: flex;
+  padding: 0px 10%;
   flex-direction: column;
   justify-content: center;
   gap: 1px;
@@ -21,6 +22,7 @@
   text-align: center;
   justify-content: center;
   margin: 50px auto; /* Reduce top margin for mobile optimisation */
+  
 }
 
 .sw_title h1 {
@@ -31,7 +33,7 @@
 /* Media Queries */
 
 /* Tablet Styling */
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 860px) {
   .single-portal-layout {
     flex-direction: row;
   }
@@ -55,6 +57,7 @@
   /* Adjust .sw_title */
   .sw_title {
     margin: 120px auto; /* Increase top margin for laptops */
+    margin-bottom: 70px;
   }
 
   .sw_title h1 {
