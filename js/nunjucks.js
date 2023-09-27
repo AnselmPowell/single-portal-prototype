@@ -20,7 +20,7 @@ try {
     fs.writeFileSync(
         './pages/portal.html', nunjucks.render('portal.njk', { pageTitle: 'Home | Sport Wales Portal'}));
     fs.writeFileSync(
-        'test.html', nunjucks.render('test.njk', { pageTitle: 'Test | Sport Wales Portal'}));
+        '404.html', nunjucks.render('404.njk', { pageTitle: '404 | Sport Wales Portal'}));
     console.log('Pages have been successfully created.');
 } catch (error) {
     console.error('Error rendering or writing pages:', error);
