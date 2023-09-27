@@ -37,8 +37,8 @@ This file (templates/base.njk) will function as our base template from which all
         <!-- Your header content here -->
     </header>
     <main>
-        <!-- block 'content' is what we will 'fill' with our other templates, known as child templates -->
-        {% block content %}{% endblock %}
+        <!-- block 'content' is what we will 'fill' with our other templates, known as child templates, make sure to remove space within word, it's there for deployment error purposes -->
+        {% bl ock content %}{% endblock %}
     </main>
     <footer>
         <!-- Your footer content here -->
