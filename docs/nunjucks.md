@@ -54,12 +54,15 @@ This file (templates/base.njk) will function as our base template from which all
 
 So for each page, e.g. funding, booking, etc, we'll create Nunjuck templates using the .njk file extension. These templates extend the base template. For example, this could be index.njk:
 ```html
+<!-- ignore 'raw' tag here - purely for GH Pages deployment error handling --->
+{% raw %}
 {% extends "base.njk" %}
 
 {% block content %}
     <h1>Welcome to Sport Wales Portal</h1>
     <p>This is the home page!</p>
 {% endblock %}
+{% endraw %}
 
 ```
 
