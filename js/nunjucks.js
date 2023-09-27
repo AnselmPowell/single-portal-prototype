@@ -9,8 +9,8 @@ Render the template and write the HTML file
 (replace template files and vars as necessary)
 */
 try {
-    fs.writeFileSync(
-        'index.html', nunjucks.render('index.njk', { pageTitle: 'Sport Wales Portal'}));
+    // fs.writeFileSync(
+    //     'index.html', nunjucks.render('index.njk', { pageTitle: 'Sport Wales Portal'}));
     fs.writeFileSync(
         './pages/funding.html', nunjucks.render('funding.njk', { pageTitle: 'Funding | Sport Wales Portal'}));
     fs.writeFileSync(
