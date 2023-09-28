@@ -77,21 +77,16 @@
   }
 }
 
-/* laptop and Larger Styles */
-@media (min-width: 800px) {
+
+
+@media screen and (min-width: 1000px) {
+  .card1 {
+    /* background-color: rgb(255, 255, 255); */
+    width: 28%;
+    padding-bottom: 22%;
+  }
   .card1 p {
     font-size: 2.5vw;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .card1 {
-    background-color: rgb(255, 255, 255);
-    width: 25%;
-    padding-bottom: 20%;
-  }
-  .card1 p {
-    font-size: 2vw;
   }
   .circle-icon {
     background-color: #aa0d1b;
@@ -102,6 +97,27 @@
 
   .circle-icon i {
     font-size: 5.5vw;
+  }
+  
+}
+@media screen and (min-width: 1400px) {
+  .card1 {
+
+    width: 25%;
+    padding-bottom: 20%;
+  }
+  .card1 p {
+    font-size: 30px;
+  }
+  .circle-icon {
+    background-color: #aa0d1b;
+    width: 50%;
+    padding-top: 50%;
+  }
+
+
+  .circle-icon i {
+    font-size: 60px;
   }
   
 }

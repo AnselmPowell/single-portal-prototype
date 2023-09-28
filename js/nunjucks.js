@@ -12,17 +12,24 @@ try {
     // fs.writeFileSync(
     //     'index.html', nunjucks.render('index.njk', { pageTitle: 'Sport Wales Portal'}));
     fs.writeFileSync(
-        './pages/funding.html', nunjucks.render('funding.njk', { pageTitle: 'Funding | Sport Wales Portal'}));
+        './pages/funding.html', nunjucks.render('funding.njk', { pageTitle: 'Funding | Sport Wales Portal', lang: 'en'}));
     fs.writeFileSync(
-        './pages/booking.html', nunjucks.render('booking.njk', { pageTitle: 'Booking | Sport Wales Portal'}));
+        './pages/booking.html', nunjucks.render('booking.njk', { pageTitle: 'Booking | Sport Wales Portal', lang: 'en'}));
     fs.writeFileSync(
-        './pages/booking_national_centre.html', nunjucks.render('booking_national_centre.njk', { pageTitle: 'Book Centre | Sport Wales Portal'}));
+        './pages/education.html', nunjucks.render('education.njk', { pageTitle: 'Learning | Sport Wales Portal', lang: 'en'}));
     fs.writeFileSync(
-        './pages/education.html', nunjucks.render('education.njk', { pageTitle: 'Learning | Sport Wales Portal'}));
+        './pages/portal.html', nunjucks.render('portal.njk', { pageTitle: 'Home | Sport Wales Portal', lang: 'en'}));
     fs.writeFileSync(
-        './pages/portal.html', nunjucks.render('portal.njk', { pageTitle: 'Home | Sport Wales Portal'}));
+        '404.html', nunjucks.render('404.njk', { pageTitle: '404 | Sport Wales Portal', lang: 'en'}));
+
+
+    // Welsh pages here
     fs.writeFileSync(
-        '404.html', nunjucks.render('404.njk', { pageTitle: '404 | Sport Wales Portal'}));
+        './pages/welsh_education.html', nunjucks.render('welsh_pages/education.njk', { pageTitle: 'Dysgu | Porth Chwaraeon Cymru', lang: 'cy'}));
+    fs.writeFileSync(
+        './pages/welsh_portal.html', nunjucks.render('welsh_pages/portal.njk', { pageTitle: 'Dysgu | Porth Chwaraeon Cymru', lang: 'cy'}));
+
+
     console.log('Pages have been successfully created.');
 } catch (error) {
     console.error('Error rendering or writing pages:', error);

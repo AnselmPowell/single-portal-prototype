@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="EN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +31,8 @@
     <link rel="stylesheet" type="text/css" href="../css/education/education.css" />
     <link rel="stylesheet" type="text/css" href="../assets/components/login_signin_forms/login_signin_forms.css"/>
     <link rel="stylesheet" type="text/css" href="../assets/components/buttons/buttons.css"/>
+
+
     <!-- THIRD PARTY CDNs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -40,30 +42,35 @@
 </head>
 <body>
       <!-- SPORT WALES HEADER 1  -->
-<div class="sw_header1">
+
+
+
+  <div class="sw_header1">
         <div class="sw_logo">
-            <a href="index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+            <a href="../index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
         </div>
 
         <div class="sw_nav">
             <ul class="hover-list">
-                <li><a href="pages/portal.html">Home</a></li>
-                <li><a href="pages/funding.html">Funding</a></li>
-                <li><a href="pages/booking.html">Booking</a></li>
-                <li><a href="pages/education.html">Learning</a></li>
+                <li><a href="../pages/portal.html">Homme</a></li>
+                <li><a href="../pages/funding.html">Funding</a></li>
+                <li><a href="../pages/booking.html">Booking</a></li>
+                <li><a href="../pages/education.html">Learning</a></li>
             </ul>
         </div>
 
         <div class="account">
             <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
             <i  style="color: white;" class="fa-solid fa-user"></i>
-            <button onclick="press_en()" class="lang-picker_en" type="button">
+            <button onclick="translateToggle()" class="lang-picker_en" type="button">
                 <span class="fi fi-gb"></span>
                 <p style="color: black;">EN</p>
                 <i style="color: black;" class="fa-solid fa-chevron-down"></i>
             </button>
         </div>
     </div>
+
+
       <div class="container-fluid" id="test_banner">
     <span id="banner_test_flag">TEST</span>
     <span id="banner_test_text">This website is a test. Please do not input any personal information.</span>
@@ -191,6 +198,7 @@
       </div>
     </div>
       <script src="../js/translation/translation.js"></script>
+      <script > console.log("lang test:", "EN")</script>
       
 </body>
 </html>

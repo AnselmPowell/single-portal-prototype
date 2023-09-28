@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,6 +47,7 @@
 
       {% include 'includes/footer.njk' %}
       <script src="../js/translation/translation.js"></script>
+      <script > console.log("lang test:", "{{lang}}")</script>
       
 </body>
 </html>
