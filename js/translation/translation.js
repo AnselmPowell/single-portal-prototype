@@ -1,4 +1,5 @@
 (() => {
+    console.log('hello')
     const localStorageKey = "translate"
     const jsonFile = JSON.parse(localStorage.getItem(localStorageKey)) || [];
     const englishPage = document.querySelector(".EN")
@@ -89,5 +90,4 @@ storeTranslate("CY");
     storeTranslate("EN");
 }  
 }
-
 
