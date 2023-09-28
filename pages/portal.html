@@ -39,39 +39,38 @@
     <title>Home | Sport Wales Portal</title>
 </head>
 <body>
-    <!-- navbar -->
       <!-- SPORT WALES HEADER 1  -->
-     <div class="sw_header1">
+<div class="sw_header1">
         <div class="sw_logo">
-            <a href="index.html"><img src="/assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+            <a href="index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
         </div>
 
         <div class="sw_nav">
             <ul class="hover-list">
-                <li><a href="../pages/portal.html">Home</a></li>
-                <li><a href="../pages/funding.html">Funding</a></li>
-                <li><a href="../pages/booking.html">Booking</a></li>
-                <li><a href="../pages/education.html">Learning</a></li>
+                <li><a href="pages/portal.html">Home</a></li>
+                <li><a href="pages/funding.html">Funding</a></li>
+                <li><a href="pages/booking.html">Booking</a></li>
+                <li><a href="pages/education.html">Learning</a></li>
             </ul>
         </div>
 
         <div class="account">
             <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
             <i  style="color: white;" class="fa-solid fa-user"></i>
-            <div class="lang-picker">
+            <button onclick="press_en()" class="lang-picker_en" type="button">
                 <span class="fi fi-gb"></span>
                 <p style="color: black;">EN</p>
                 <i style="color: black;" class="fa-solid fa-chevron-down"></i>
-            </div>
+            </button>
         </div>
     </div>
-
-        <div class="container-fluid" id="test_banner">
+      <div class="container-fluid" id="test_banner">
     <span id="banner_test_flag">TEST</span>
     <span id="banner_test_text">This website is a test. Please do not input any personal information.</span>
 </div>
-        <!-- NUNJUCKS CHILD TEMPLATE CONTENT -->
-        
+
+      <!-- NUNJUCKS CHILD TEMPLATE CONTENT -->
+      
     <div class="main">
         <div class="home-bg-image">
             <h1 class="font-weight-bold mt-5 mb-5">The Sport Wales Portal</h1>
@@ -224,12 +223,13 @@
     </div>
 
     
-    
-        <div class="home sw_footer1">
+
+       <!-- SPORT WALES FOOTER 1  -->
+<div class="home sw_footer1">
         <div class="sw_logo">
           <a href="index.html"
             ><img
-              src="/assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg"
+              src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg"
               alt="Sport Wales Logo"
           /></a>
         </div>
@@ -255,5 +255,8 @@
           <div class="btn btn-light">Log in</div>
         </div>
       </div>
+    </div>
+      <script src="../js/translation/translation.js"></script>
+      
 </body>
 </html>
