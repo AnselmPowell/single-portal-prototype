@@ -16,6 +16,8 @@ try {
     fs.writeFileSync(
         './pages/booking.html', nunjucks.render('booking.njk', { pageTitle: 'Booking | Sport Wales Portal'}));
     fs.writeFileSync(
+        './pages/booking_national_centre.html', nunjucks.render('booking_national_centre.njk', { pageTitle: 'Book Centre | Sport Wales Portal'}));
+    fs.writeFileSync(
         './pages/education.html', nunjucks.render('education.njk', { pageTitle: 'Learning | Sport Wales Portal'}));
     fs.writeFileSync(
         './pages/portal.html', nunjucks.render('portal.njk', { pageTitle: 'Home | Sport Wales Portal'}));
