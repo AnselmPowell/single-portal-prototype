@@ -1,0 +1,44 @@
+{% extends "base_booking.njk" %}
+{% block content %}
+<div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+        <ol style="background-color: transparent;" class="breadcrumb">
+            <li class="breadcrumb-item"><a href="portal.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Manage bookings</li>
+        </ol>
+    </nav>
+    <h1 class="font-weight-bold mt-5 mb-5">Book a badminton court</h1>
+    <form action="">
+        <label for="datepicker">Pick your date:</label>
+        <input id="datepicker" placeholder="Select a date" class="form-control"/>
+        <label for="times">Pick your time:</label>
+        <select id="times" name="times" class="form-control">
+            <option value="10am">10:00 - 11:00</option>
+            <option value="11am">11:00 - 12:00</option>
+            <option value="12pm">12:00 - 13:00</option>
+            <option value="1pm">13:00 - 14:00</option>
+            <option value="2pm">14:00 - 15:00</option>
+            <option value="3pm">15:00 - 16:00</option>
+            <option value="4pm">16:00 - 17:00</option>
+            <option value="5pm">10:00 - 11:00</option>
+        </select>
+        <label for="courts">Pick a court:</label>
+        <select id="courts" name="courts" class="form-control">
+            <option value="10am">Court 1</option>
+            <option value="11am">Court 2</option>
+            <option value="12pm">Court 3</option>
+            <option value="1pm">Court 4</option>
+        </select>
+    </form>
+    <a class="btn btn-danger mb-3" href="booking_badminton.html" role="button">Add to basket</a>
+    
+<script>
+    const picker = new easepick.create({
+        element: document.getElementById('datepicker'),
+        css: [
+            'https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css',
+        ],
+    });
+</script>
+</div>    
+{% endblock %}

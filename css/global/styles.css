@@ -250,6 +250,13 @@ a:visited {
   margin-right: 7px;
 }
 
+a.btn {
+  color: #fff!important;
+}
+
+a.btn-outline-danger {
+  color: red!important;
+}
 
 
 /*   ## TABLET STYLES (769px to 1024px wide) */
@@ -271,3 +278,4 @@ a:visited {
      /* Your desktop-specific styles go here */
   /* - {NAME} STYLES */
 }
+
