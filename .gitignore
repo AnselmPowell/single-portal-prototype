@@ -3,3 +3,4 @@
 ._index.html
 .vscode
 node_modules
+.gitpod.yml
