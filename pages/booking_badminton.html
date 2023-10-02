@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ensures no search engine will display page: -->
     <meta name="robots" content="noindex, nofollow">
-    <title>Book a court | Sport Wales Portal</title>
+    <title>Book Badminton | Sport Wales Portal</title>
     <link rel="icon" href="../assets/icons/sw_favicon.ico" type="image/x-icon">  
     <!-- FONTAWESOME  -->
     <script src="https://kit.fontawesome.com/937b7e56e6.js" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.umd.min.js"></script>
-    <title>Book a court | Sport Wales Portal</title>
+    <title>Book Badminton | Sport Wales Portal</title>
 </head>
 <body>
     <!-- navbar -->
@@ -73,60 +73,46 @@
         <!-- NUNJUCKS CHILD TEMPLATE CONTENT -->
         
 <div class="container">
-     <nav class="breadcrumbs" aria-label="breadcrumb">
+    <nav class="breadcrumbs" aria-label="breadcrumb">
         <ol style="background-color: transparent;" class="breadcrumb">
             <li class="breadcrumb-item"><a href="portal.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Manage bookings</li>
         </ol>
     </nav>
-    <h1 class="font-weight-bold mt-5 mb-5">Book a court</h1>
-    <h2 class="font-weight-bold mt-5 mb-5">Racquet sports</h2>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Badminton</h3>
-                <a class="btn btn-outline-danger mb-3" href="booking_badminton.html" role="button">Make a booking</a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Outdoor tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Table tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-    </div>
-    <h2 class="font-weight-bold mt-5 mb-5">Team sports</h2>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Indoor tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        
-    </div>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Basketball</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Outdoor hockey</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        
-    </div>
-</div>
+    <h1 class="font-weight-bold mt-5 mb-5">Book a badminton court</h1>
+    <form action="">
+        <label for="datepicker">Select your date:</label>
+        <input id="datepicker" placeholder="Select a date" class="form-control"/>
+        <label for="times">Select your time:</label>
+        <select id="times" name="times" class="form-control">
+            <option value="10am">10:00 - 11:00</option>
+            <option value="11am">11:00 - 12:00</option>
+            <option value="12pm">12:00 - 13:00</option>
+            <option value="1pm">13:00 - 14:00</option>
+            <option value="2pm">14:00 - 15:00</option>
+            <option value="3pm">15:00 - 16:00</option>
+            <option value="4pm">16:00 - 17:00</option>
+            <option value="5pm">10:00 - 11:00</option>
+        </select>
+        <label for="courts">Select a court:</label>
+        <select id="courts" name="courts" class="form-control">
+            <option value="10am">Court 1</option>
+            <option value="11am">Court 2</option>
+            <option value="12pm">Court 3</option>
+            <option value="1pm">Court 4</option>
+        </select>
+    </form>
+    <a class="btn btn-danger mb-3" href="booking_badminton.html" role="button">Add to basket</a>
+    
+<script>
+    const picker = new easepick.create({
+        element: document.getElementById('datepicker'),
+        css: [
+            'https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css',
+        ],
+    });
+</script>
+</div>    
 
     
         <div class="home sw_footer1">

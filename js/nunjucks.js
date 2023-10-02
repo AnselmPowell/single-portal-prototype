@@ -25,7 +25,9 @@ try {
         './pages/booking_courts.html', nunjucks.render('booking_courts.njk', { pageTitle: 'Book a court | Sport Wales Portal', lang: 'en'}));
     fs.writeFileSync(
         './pages/booking_national_centre.html', nunjucks.render('booking_national_centre.njk', { pageTitle: 'Book National Centre | Sport Wales Portal', lang: 'en'}));
-    
+    fs.writeFileSync(
+        './pages/booking_badminton.html', nunjucks.render('booking_badminton.njk', { pageTitle: 'Book Badminton | Sport Wales Portal', lang: 'en'}));
+        
 
     // Welsh pages here
     fs.writeFileSync(
