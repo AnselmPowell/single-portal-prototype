@@ -38,67 +38,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.umd.min.js"></script>
     <title>{{ pageTitle }}</title>
 </head>
-<body>
-    <!-- navbar -->
-      <!-- SPORT WALES HEADER 1  -->
-     <div class="sw_header1">
-        <div class="sw_logo">
-            <a href="index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
-        </div>
-
-        <div class="sw_nav">
-            <ul class="hover-list">
-                <li><a href="../pages/portal.html">Home</a></li>
-                <li><a href="../pages/funding.html">Funding</a></li>
-                <li><a href="../pages/booking.html">Booking</a></li>
-                <li><a href="../pages/education.html">Learning</a></li>
-            </ul>
-        </div>
-
-        <div class="account">
-            <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
-            <i  style="color: white;" class="fa-solid fa-user"></i>
-            <div class="lang-picker">
-                <span class="fi fi-gb"></span>
-                <p style="color: black;">EN</p>
-                <i style="color: black;" class="fa-solid fa-chevron-down"></i>
-            </div>
-        </div>
-    </div>
-
+<body> 
+    
+        {% include 'includes/header.njk' %}
         {% include 'includes/test_banner.njk' %}
+
+        
         <!-- NUNJUCKS CHILD TEMPLATE CONTENT -->
         {% block content %}{% endblock %}
     
-        <div class="home sw_footer1">
-        <div class="sw_logo">
-          <a href="index.html"
-            ><img
-              src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg"
-              alt="Sport Wales Logo"
-          /></a>
-        </div>
-  
-        <div class="sw_footer-nav">
-          <ul>
-            <li><a class="title-list" href="index.html">Sport Wales</a></li>
-            <li><a href="index.html">About us</a></li>
-            <li><a href="index.html">Main Website</a></li>
-            <li><a href="index.html">Where we are</a></li>
-          </ul>
-          <ul>
-            <li><a class="title-list" href="index.html">Find out more</a></li>
-            <li><a href="index.html">Privacy</a></li>
-            <li><a href="index.html">Accessibility</a></li>
-            <li><a href="index.html">Cookie policy</a></li>
-            <li><a href="index.html">Freedom of Information</a></li>
-          </ul>
-        </div>
-  
-        <div class="account-btn-container">
-          <div class="btn btn-danger">Register</div>
-          <div class="btn btn-light">Log in</div>
-        </div>
-      </div>
+        {% include 'includes/footer.njk' %}
+        <!-- THIRD PARTY JS CDNs -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+         <!-- Global JS -->
+         <script src="../js/global/global.js"></script>
+
+        <!-- Page Translations -->
+        <script src="../js/translation/translation.js"></script>
+        <script > console.log("lang test:", "{{lang}}")</script>
 </body>
 </html>

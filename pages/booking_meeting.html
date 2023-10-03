@@ -38,12 +38,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.umd.min.js"></script>
     <title>Book a meeting | Sport Wales Portal</title>
 </head>
-<body>
-    <!-- navbar -->
-      <!-- SPORT WALES HEADER 1  -->
-     <div class="sw_header1">
+<body> 
+    
+        <!-- SPORT WALES HEADER 1  -->
+
+
+
+  <div class="sw_header1">
         <div class="sw_logo">
-            <a href="index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+            <a href="../index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
         </div>
 
         <div class="sw_nav">
@@ -58,18 +61,21 @@
         <div class="account">
             <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
             <i  style="color: white;" class="fa-solid fa-user"></i>
-            <div class="lang-picker">
+            <button onclick="translateToggle()" class="lang-picker_en" type="button">
                 <span class="fi fi-gb"></span>
                 <p style="color: black;">EN</p>
                 <i style="color: black;" class="fa-solid fa-chevron-down"></i>
-            </div>
+            </button>
         </div>
     </div>
+
 
         <div class="container-fluid" id="test_banner">
     <span id="banner_test_flag">TEST</span>
     <span id="banner_test_text">This website is a test. Please do not input any personal information.</span>
 </div>
+
+        
         <!-- NUNJUCKS CHILD TEMPLATE CONTENT -->
         
 <div class="container">
@@ -83,7 +89,7 @@
     </nav>
     <h1 class="font-weight-bold mt-5 mb-5">Book a Meeting </h1>
     <p>Discover the ideal space for your meetings and gatherings at Sport Wales National Centre. Our versatile meeting rooms offer options for both small and larger groups, accommodating various setups to suit your needs. Equipped with cutting-edge multimedia technology, including video conferencing capabilities, you can seamlessly connect with colleagues and clients. We also provide catering services, ensuring that your event caters to everyones attendings dietary needs.</p>
-    <h2 class="font-weight-bold mt-5 mb-5">Meeting Rooms available</h2>
+    <h2 class="font-weight-bold mt-5 mb-5">Meeting rooms available</h2>
     <div class="form-group">
         <select class="form-control" id="bookMeetingRoom">
                     <option id="none" value="None" selected="selected">None</option>
@@ -104,7 +110,7 @@
                 <div class="meeting-content mt-5 mb-5" id="myTabContent meeting">
                             <div id="none" ></div>
                             <div class="tab-pane fade show active " id="bute" role="tabpanel" aria-labelledby="bute-tab">
-                                <div class="row" style="height: 300px; width: 100%;">
+                                <div class="row">
                                     <div class="col-md-4 mr-5">
                                         <img src="https://www.sport.wales/images/custom/9b/75dae305b295158b902b7ccea73c50/w1400/h788/wpopng/images/uploads/9b75dae305b295158b902b7ccea73c50.webp" alt="" style="width: 120%; height: 100%;">
                                     </div>
@@ -586,7 +592,8 @@
 </div>
 
     
-        <div class="home sw_footer1">
+         <!-- SPORT WALES FOOTER 1  -->
+<div class="home sw_footer1">
         <div class="sw_logo">
           <a href="index.html"
             ><img
@@ -616,5 +623,17 @@
           <div class="btn btn-light">Log in</div>
         </div>
       </div>
+    </div>
+        <!-- THIRD PARTY JS CDNs -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+         <!-- Global JS -->
+         <script src="../js/global/global.js"></script>
+
+        <!-- Page Translations -->
+        <script src="../js/translation/translation.js"></script>
+        <script > console.log("lang test:", "en")</script>
 </body>
 </html>
