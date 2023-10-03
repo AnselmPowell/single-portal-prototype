@@ -1,4 +1,5 @@
 (() => {
+
     const localStorageKey = "translate"
     const jsonFile = JSON.parse(localStorage.getItem(localStorageKey)) || [];
     try{
@@ -15,29 +16,6 @@
                 // Save the JSON file.
                 localStorage.setItem(localStorageKey, JSON.stringify(jsonFile));
             }
-            // if(pageType.page == "EN"){
-            //     console.log('inside english 0')
-            //     // JSON.parse(localStorage.clear(localStorageKey))
-            //         const pathName = window.location.pathname
-            //         setTimeout(function() {
-            //             console.log('inside English')
-            //             const newPathname = pushToWelshPage(pathName)
-                        
-            //             window.location.href = (newPathname)
-            //         }, 1000);
-            // } 
-            // if(pageType.page == "CY"){
-            //     console.log('inside wales 0')
-            //         const pathName = window.location.pathname
-            //         console.log(pathName)
-            //         setTimeout(function() {
-            //             const newPathname = pushToWelshPage(pathName)
-            //             console.log('inside Wales')
-            //             window.location.href = (newPathname)
-            //         }, 1000);
-                    
-            
-            // }
         } 
     } catch{}
 

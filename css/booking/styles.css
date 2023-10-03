@@ -7,3 +7,25 @@
     border-top-left-radius: 0.8rem!important; /* Adjust the radius as needed */
     border-top-right-radius: 10px;
 }
+
+
+/* Meeting room content */
+
+.meetRoom_container.show {
+    display: block;
+}
+
+.meetRoom_container.hide {
+    display: none;
+}
+
+.meeting-content .tab-pane {
+    display: none;
+
+}
+  
+
+.meeting-content .tab-pane.show.active {
+    display: block;
+
+}
