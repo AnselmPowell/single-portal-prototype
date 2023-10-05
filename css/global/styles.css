@@ -76,6 +76,15 @@ a {
   list-style: none;
 }
 
+button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  /* Add any additional styles you want to reset here */
+}
+
 body {
   font-family: "Montserrat", sans-serif !important;
   background-color: var(--background-color) !important;
