@@ -2,18 +2,21 @@
 
     const localStorageKey = "translate"
     const jsonFile = JSON.parse(localStorage.getItem(localStorageKey)) || [];
-    const langPicker = document.querySelector('.lang-picker_en');
+    console.log('inside')
 
     try{
 
         if((jsonFile)) {
+            
             const pageType = jsonFile.find(page => page);
+          
             // JSON.parse(localStorage.clear(localStorageKey))
-            console.log('pageLang', pageType.page)
+            console.log('pageLang', pageType)
             console.log('jsonFile', jsonFile)
+            
 
             if(!pageType) { 
-                console.log('testt')
+               
                 jsonFile.push({page: 'EN'});
                 // Save the JSON file.
                 localStorage.setItem(localStorageKey, JSON.stringify(jsonFile));
@@ -58,10 +61,6 @@ async function storeTranslate(lang) {
 
 const translateToggle = ()=> {
     
-const langPicker = document.querySelector('.lang-picker_en');
-// console.log(langPicker.childNodes[3].childNodes[0].data)
-console.log(langPicker.childNodes[3].innerHTML)
-// const currentLang = langPicker.childNodes[3].childNodes[0].data
 const localStorageKey = "translate"
 const jsonFile = JSON.parse(localStorage.getItem(localStorageKey)) || [];
 const pageType = jsonFile.find(page => page);

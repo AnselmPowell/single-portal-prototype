@@ -36,9 +36,11 @@ try {
         './pages/welsh_education.html', nunjucks.render('welsh_pages/education.njk', { pageTitle: 'Dysgu | Porth Chwaraeon Cymru', lang: 'cy'}));
     fs.writeFileSync(
         './pages/welsh_portal.html', nunjucks.render('welsh_pages/portal.njk', { pageTitle: 'Dysgu | Porth Chwaraeon Cymru', lang: 'cy'}));
-
+    fs.writeFileSync(
+        './pages/welsh_funding.html', nunjucks.render('welsh_pages/funding.njk', { pageTitle: 'Dysgu | Porth Chwaraeon Cymru', lang: 'cy'}));
 
     console.log('Pages have been successfully created.');
+    
 } catch (error) {
     console.error('Error rendering or writing pages:', error);
 }
