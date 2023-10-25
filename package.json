@@ -2,5 +2,30 @@
   "dependencies": {
     "@easepick/bundle": "^1.2.1",
     "nunjucks": "^3.2.4"
-  }
+  },
+  "name": "single-portal-prototype",
+  "description": "This is a frontend prototype built to test a single sign-on (SSO) portal where users can access core Sport Wales services. This is a **beta** test built and not to be treated as a final Sport Wales product. [View the live deployed site](https://anselmpowell.github.io/single-portal-prototype/).",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnselmPowell/single-portal-prototype.git"
+  },
+  "keywords": [
+    "sport",
+    "wales",
+    "government"
+  ],
+  "author": "Sport Wales",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnselmPowell/single-portal-prototype/issues"
+  },
+  "homepage": "https://github.com/AnselmPowell/single-portal-prototype#readme"
 }
