@@ -1,46 +1,48 @@
 const nunjucks = require('nunjucks');
 const fs = require('fs');
 
-// Configure Nunjucks to load templates from a directory (adjust this path)
 nunjucks.configure('./templates', { autoescape: true });
 
-/* 
-Render the template and write the HTML file
-(replace template files and vars as necessary)
-*/
+class Page {
+    constructor(filename, pageTitle) {
+        this.filename = filename;
+        this.pageTitle = pageTitle;
+    }
+
+    create() {
+        // adapts file if it's the index.html or 404.html (needs unique file paths and output location)
+        const relFilePath = this.filename !== 'index' && this.filename !== '404' ? '../' : '';
+        const outputLocation = this.filename !== 'index' && this.filename !== '404' ? './pages/' : '';
+
+        fs.writeFileSync(
+            `${outputLocation}${this.filename}.html`,
+            nunjucks.render(`${this.filename}.njk`, {
+                pageTitle: `${this.pageTitle} | Sport Wales Portal`,
+                filePath: relFilePath,
+            })
+        );
+    }
+}
+
+const pages = [
+    new Page('index', 'Welcome'),
+    new Page('funding', 'Funding'),
+    new Page('booking', 'Booking'),
+    new Page('education', 'Learning'),
+    new Page('portal', 'Home'),
+    new Page('404', '404'),
+    new Page('booking_meeting', 'Book a meeting'),
+    new Page('booking_courts', 'Book a court'),
+    new Page('booking_national_centre', 'Book National Centre'),
+    new Page('booking_badminton', 'Book Badminton'),
+]
+
+// entry point:
 try {
-    // fs.writeFileSync(
-    //     'index.html', nunjucks.render('index.njk', { pageTitle: 'Sport Wales Portal'}));
-    fs.writeFileSync(
-        './pages/funding.html', nunjucks.render('funding.njk', { pageTitle: 'Funding | Sport Wales Portal', lang: 'en'}));
-    fs.writeFileSync(
-        './pages/booking.html', nunjucks.render('booking.njk', { pageTitle: 'Booking | Sport Wales Portal', lang: 'en'}));
-    fs.writeFileSync(
-        './pages/education.html', nunjucks.render('education.njk', { pageTitle: 'Learning | Sport Wales Portal', lang: 'en'}));
-    fs.writeFileSync(
-        './pages/portal.html', nunjucks.render('portal.njk', { pageTitle: 'Home | Sport Wales Portal', lang: 'en'}));
-    fs.writeFileSync(
-        '404.html', nunjucks.render('404.njk', { pageTitle: '404 | Sport Wales Portal', lang: 'en'}));
-    fs.writeFileSync(
-        './pages/booking_meeting.html', nunjucks.render('booking_meeting.njk', { pageTitle: 'Book a meeting | Sport Wales Portal', lang: 'en'}));
-    fs.writeFileSync(
-        './pages/booking_courts.html', nunjucks.render('booking_courts.njk', { pageTitle: 'Book a court | Sport Wales Portal', lang: 'en'}));
-    fs.writeFileSync(
-        './pages/booking_national_centre.html', nunjucks.render('booking_national_centre.njk', { pageTitle: 'Book National Centre | Sport Wales Portal', lang: 'en'}));
-    fs.writeFileSync(
-        './pages/booking_badminton.html', nunjucks.render('booking_badminton.njk', { pageTitle: 'Book Badminton | Sport Wales Portal', lang: 'en'}));
-        
-
-    // Welsh pages here
-    fs.writeFileSync(
-        './pages/welsh_education.html', nunjucks.render('welsh_pages/education.njk', { pageTitle: 'Dysgu | Porth Chwaraeon Cymru', lang: 'cy'}));
-    fs.writeFileSync(
-        './pages/welsh_portal.html', nunjucks.render('welsh_pages/portal.njk', { pageTitle: 'Dysgu | Porth Chwaraeon Cymru', lang: 'cy'}));
-    fs.writeFileSync(
-        './pages/welsh_funding.html', nunjucks.render('welsh_pages/funding.njk', { pageTitle: 'Dysgu | Porth Chwaraeon Cymru', lang: 'cy'}));
-
-    console.log('Pages have been successfully created.');
-    
+    for (const page of pages) {
+        page.create();
+    }
+    console.log('Pages successfully created.');
 } catch (error) {
     console.error('Error rendering or writing pages:', error);
 }

@@ -1,18 +1,18 @@
 <!-- SPORT WALES HEADER 1  -->
 
 
-{% if  "en" in lang  %}
+{# {% if  "en" in lang  %} #}
   <div class="sw_header1 ">
         <div class="sw_logo">
-            <a href="../index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+            <a href="{{ filePath }}index.html"><img src="{{ filePath }}assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
         </div>
 
         <div class="sw_nav">
             <ul class="hover-list">
-                <li><a href="../pages/portal.html"> Home </a></li>
-                <li><a href="../pages/funding.html"> Funding </a></li>
-                <li><a href="../pages/booking.html"> Booking </a></li>
-                <li><a href="../pages/education.html"> Learning</a></li>
+                <li><a href="{{ filePath }}pages/portal.html"> Home </a></li>
+                <li><a href="{{ filePath }}pages/funding.html"> Funding </a></li>
+                <li><a href="{{ filePath }}pages/booking.html"> Booking </a></li>
+                <li><a href="{{ filePath }}pages/education.html"> Learning</a></li>
             </ul>
         </div>
 
@@ -26,7 +26,7 @@
             </button>
         </div>
     </div>
-{% else %}
+{# {% else %}
  <div class="sw_header1">
       <div class="sw_logo">
           <a href="../index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
@@ -53,4 +53,4 @@
           </button>
        </div>
       </div>
-{% endif %} 
+{% endif %}  #}
