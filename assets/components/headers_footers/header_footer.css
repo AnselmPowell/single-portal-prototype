@@ -239,12 +239,16 @@
 
 
 /*   ## DESKTOP STYLES (1441px wide and above) */
-@media screen and (min-width: var(--desktop-min)) {
+@media screen and (min-width: 1441px) {
   /*    Your desktop-specific styles go here */
+  .sw_header1 {
+    min-height: 5%;
+  }
 
 
   /* SPORT WALES FOOTER 1 STYLE */
   .sw_footer1 {
     margin-top: 120px;
+    min-height: 12%;
   }
 }

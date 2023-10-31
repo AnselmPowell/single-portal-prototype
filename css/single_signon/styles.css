@@ -5,7 +5,10 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  
 }
+
+
 
 /* Target the .single-portal-layout */
 .single-portal-layout {
@@ -69,6 +72,10 @@
 
 /* Desktop Styling */
 @media screen and (min-width: 1441px) {
+  .main.sign-on {
+    min-height: 82%;
+  }
+
   .single-portal-layout {
     flex-direction: row;
   }
