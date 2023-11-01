@@ -33,7 +33,10 @@
   font-size: 32px; /* Adjust font size for mobile */
 }
 
+
+
 /* Media Queries */
+
 
 /* Tablet Styling */
 @media screen and (min-width: 860px) {
@@ -73,7 +76,7 @@
 /* Desktop Styling */
 @media screen and (min-width: 1441px) {
   .main.sign-on {
-    min-height: 82%;
+    min-height: 83%;
   }
 
   .single-portal-layout {
@@ -90,3 +93,4 @@
 
   /* Any additional desktop-specific styles go here */
 }
+
