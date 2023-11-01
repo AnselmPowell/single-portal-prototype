@@ -93,14 +93,26 @@
 
 /* Sport Wales Navigation */
 .sw_nav {
-  display: flex;
+  display: none;
   flex: 1;
   justify-content: space-between;
   align-items: center;
   margin-left: 40px;
 }
 
-.sw_nav ul {
+.menu-btn {
+  display: block;
+  position: relative;
+  margin: 0px 10px; 
+}
+
+.menu-icon {
+  color: white;
+  font-size: 18px;
+}
+
+
+.sw_header1 ul {
   margin-bottom: 0px;
 }
 
@@ -113,11 +125,23 @@
   margin: 0 10px;
 }
 
-.sw_nav ul li a {
+.sw_header1 ul li a {
   color: white;
   text-decoration: none;
   font-size: 12px;
 }
+
+.navbar-collapse  {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.navbar-collapse ul li {
+  display: block;
+}
+
 
 
 .account {
@@ -200,6 +224,13 @@
 /*   ## TABLET STYLES (769px or bigger) */
 @media screen and (min-width: 769px) {
   /*    Your tablet-specific styles go here */
+
+  .sw_nav {
+    display: flex;
+  }
+  .menu-icon  {
+    display: none;
+  }
 
   .sw_footer1 {
     display: flex;

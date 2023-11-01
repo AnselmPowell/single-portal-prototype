@@ -1,56 +1,50 @@
 <!-- SPORT WALES HEADER 1  -->
+<nav class="navbar sw_header1 ">
+    <div class="sw_logo">
+        <a href="{{ filePath }}index.html"><img src="{{ filePath }}assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+    </div>
 
+    
 
-{# {% if  "en" in lang  %} #}
-  <div class="sw_header1 ">
-        <div class="sw_logo">
-            <a href="{{ filePath }}index.html"><img src="{{ filePath }}assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
-        </div>
-
-        <div class="sw_nav">
-            <ul class="hover-list">
-                <li><a href="{{ filePath }}pages/portal.html"> Home </a></li>
+    <div class="sw_nav">
+        <ul class="hover-list">
+            <li><a href="{{ filePath }}pages/portal.html"> Home </a></li>
                 <li><a href="{{ filePath }}pages/funding.html"> Funding </a></li>
                 <li><a href="{{ filePath }}pages/booking.html"> Booking </a></li>
                 <li><a href="{{ filePath }}pages/education.html"> Learning</a></li>
-            </ul>
-        </div>
-
-        <div class="account">
-            <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
-            <i  style="color: white;" class="fa-solid fa-user"></i>
-            <button onclick="translateToggle()" class="lang-picker_en" type="button">
-                <span class="fi fi-gb"></span>
-                <p style="color: black; text-transform: uppercase">{{lang}}</p>
-                <i style="color: black;" class="fa-solid fa-chevron-down"></i>
-            </button>
-        </div>
+        </ul>
     </div>
-{# {% else %}
- <div class="sw_header1">
-      <div class="sw_logo">
-          <a href="../index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
-      </div>
 
-      <div class="sw_nav">
-          <ul class="hover-list">
-              <li><a href="../pages/welsh_portal.html">Cartref</a></li>
-              <li><a href="../pages/welsh_funding.html">
-               Ariannu</a></li>
-              <li><a href="../pages/welsh_booking.html">Archebu</a></li>
-              <li><a href="../pages/welsh_education.html">
-               Dysgu</a></li>
-          </ul>
-      </div>
 
-      <div class="account">
-          <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
-          <i  style="color: white;" class="fa-solid fa-user"></i>
-          <button onclick="translateToggle()" class="lang-picker_cy" type="button">
-              <span class="fi fi-gb"></span>
-              <p style="color: black;">CY</p>
-              <i style="color: black;" class="fa-solid fa-chevron-down"></i>
-          </button>
-       </div>
-      </div>
-{% endif %}  #}
+    <div class="account">
+        <button class="menu-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+            class="fas fa-bars fa-1x menu-icon"></i></span>
+        </button>
+        <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
+        <i  style="color: white;" class="fa-solid fa-user"></i>
+        <button onclick="translateToggle()" class="lang-picker_en" type="button">
+            <span class="fi fi-gb"></span>
+            <p style="color: black; text-transform: uppercase">{{lang}}</p>
+            <i style="color: black;" class="fa-solid fa-chevron-down"></i>
+        </button>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+        <ul class="hover-list">
+            <li><a href="{{ filePath }}pages/portal.html"> Home </a></li>
+                <li><a href="{{ filePath }}pages/funding.html"> Funding </a></li>
+                <li><a href="{{ filePath }}pages/booking.html"> Booking </a></li>
+                <li><a href="{{ filePath }}pages/education.html"> Learning</a></li>
+        </ul>
+
+    </div>
+
+
+
+</nav>
+
+
+
