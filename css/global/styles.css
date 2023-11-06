@@ -267,6 +267,15 @@ a.btn-outline-danger {
   color: red!important;
 }
 
+a.btn-outline-danger:hover {
+  color: white!important;
+}
+
+div.card, div.container {
+  display: block;
+}
+  
+
 
 /*   ## TABLET STYLES (769px to 1024px wide) */
 @media screen and (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {

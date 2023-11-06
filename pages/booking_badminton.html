@@ -41,33 +41,54 @@
 <body> 
     
         <!-- SPORT WALES HEADER 1  -->
+<nav class="navbar sw_header1 ">
+    <div class="sw_logo">
+        <a href="../index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
+    </div>
 
+    
 
-
-  <div class="sw_header1 ">
-        <div class="sw_logo">
-            <a href="../index.html"><img src="../assets/img/Sport Wales logos/Logos - White/Sport Wales - Logo_White.svg" alt="Sport Wales Logo"></a>
-        </div>
-
-        <div class="sw_nav">
-            <ul class="hover-list">
-                <li><a href="../pages/portal.html"> Home </a></li>
+    <div class="sw_nav">
+        <ul class="hover-list">
+            <li><a href="../pages/portal.html"> Home </a></li>
                 <li><a href="../pages/funding.html"> Funding </a></li>
                 <li><a href="../pages/booking.html"> Booking </a></li>
                 <li><a href="../pages/education.html"> Learning</a></li>
-            </ul>
-        </div>
-
-        <div class="account">
-            <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
-            <i  style="color: white;" class="fa-solid fa-user"></i>
-            <button onclick="translateToggle()" class="lang-picker_en" type="button">
-                <span class="fi fi-gb"></span>
-                <p style="color: black; text-transform: uppercase"></p>
-                <i style="color: black;" class="fa-solid fa-chevron-down"></i>
-            </button>
-        </div>
+        </ul>
     </div>
+
+
+    <div class="account">
+        <button class="menu-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+            class="fas fa-bars fa-1x menu-icon"></i></span>
+        </button>
+        <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
+        <i  style="color: white;" class="fa-solid fa-user"></i>
+        <button onclick="translateToggle()" class="lang-picker_en" type="button">
+            <span class="fi fi-gb"></span>
+            <p style="color: black; text-transform: uppercase"></p>
+            <i style="color: black;" class="fa-solid fa-chevron-down"></i>
+        </button>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+        <ul class="hover-list">
+            <li><a href="../pages/portal.html"> Home </a></li>
+                <li><a href="../pages/funding.html"> Funding </a></li>
+                <li><a href="../pages/booking.html"> Booking </a></li>
+                <li><a href="../pages/education.html"> Learning</a></li>
+        </ul>
+
+    </div>
+
+
+
+</nav>
+
+
 
 
         <div class="container-fluid" id="test_banner">
@@ -111,7 +132,7 @@
             <option value="1pm">Court 4</option>
         </select>
     </form>
-    <a class="btn btn-danger mb-3" href="booking_badminton.html" role="button">Add to basket</a>
+    <a class="btn btn-danger my-3" href="booking_badminton.html" role="button">Add to basket</a>
     
 <script>
     const picker = new easepick.create({
