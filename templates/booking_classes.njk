@@ -1,0 +1,58 @@
+{% extends "base_booking.njk" %}
+
+{% block content %}
+<div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+       <ol style="background-color: transparent;" class="breadcrumb">
+           <li class="breadcrumb-item"><a href="portal.html">Home</a></li>
+           <li class="breadcrumb-item" ><a href="booking.html">Manage bookings</a></li>
+           <li class="breadcrumb-item "><a href="booking_national_centre.html">Cardiff National Centre</a></li>
+           <li class="breadcrumb-item active" aria-current="page">Book a class</li>
+       </ol>
+   </nav>
+   <h1 class="font-weight-bold mt-5 mb-5">Book a class</h1>
+   <p>you can effortlessly secure your spot in our diverse range of classes, from high-energy dance to calming yoga, and everything in between. Start reserving your class today to elevate your fitness journey.</p>
+   <h2 class="font-weight-bold mt-5 mb-5">Studio</h2>
+   <div class="row">
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Dance class</h3>
+               <img src="../assets/icons/Sport Wales icons/Icons - Black/PNG/Dance.png" style="height: 60px; width: 60px; display: block; margin: 20px 10px; " alt="Yogo mat icon">
+               <a class="btn btn-outline-danger mb-3" href="booking_badminton.html" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Pilates</h3>
+               <img src="../assets/icons/Sport Wales icons/Icons - Black/PNG/Pilates.png" style="height: 60px; width: 60px; display: block; margin: 20px 10px;" alt="person on a mat icon">
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Yogo</h3>
+               <img src="../assets/icons/Sport Wales icons/Icons - Black/PNG/Yoga Mat - Black.png" style="height: 90px; width: 90px; display: block; margin: 10px 10px; " alt="Yogo mat icon">
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+   </div>
+   <h2 class="font-weight-bold mt-5 mb-5">Sport hall</h2>
+   <div class="row">
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Circuits</h3>
+               <img src="../assets/icons/Sport Wales icons/Icons - Black/PNG/Circuits.png" style="height: 80px; width: 80px; display: block; margin: 20px 10px;" alt="Yogo mat icon">
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+   
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Spin class</h3>
+               <img src="../assets/icons/Sport Wales icons/Icons - Black/PNG/Gym - Fitness - Black.png" style="height: 70px; width: 70px; display: block; margin: 20px 10px; " alt="Cycle icon">
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+   </div>
+</div>
+{% endblock %}

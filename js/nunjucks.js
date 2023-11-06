@@ -33,8 +33,12 @@ const pages = [
     new Page('404', '404'),
     new Page('booking_meeting', 'Book a meeting'),
     new Page('booking_courts', 'Book a court'),
+    new Page('booking_classes', 'Book a class'),
     new Page('booking_national_centre', 'Book National Centre'),
-    new Page('booking_badminton', 'Book Badminton'),
+    new Page('booking_dance', 'Book Dance Classes '),
+    new Page('booking_pilates', 'Book Pilates'),
+    new Page('booking_yoga', 'Book Yoga Clasess'),
+    new Page('booking_spinning', 'Book Spin Classes'),
 ]
 
 // entry point:
