@@ -31,7 +31,7 @@
     --laptop-max: 1440px;
     --desktop-min: 1441px;
   
-    --primary-color: #AA0D1B;
+    --primary-color: #e32434;
     --secondary-color: #164B63;
     --bg-color: #f5f5f5;
   
@@ -50,7 +50,7 @@
   /* CITBAG NAVIGATION */
   .citbag_nav {
     padding: 20px 10%;
-    background-color: var(--primary-color);
+    background-color: #e32434;
     color: white;
     display: flex;
     flex: 1;
@@ -60,16 +60,37 @@
 
 
 
+
 .citbag_nav ul {
-  display: flex;
+  display: none;
   flex: 0.8;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0px;
 }
 
-.citbag_nav ul li a {
+.citbag_nav-collapse {
+  background-color: #e32434;
+  color: white;
+}
+
+.citbag_nav-collapse ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  color: white !important;
+  
+} 
+
+.citbag_nav-collapse ul li a {
+    text-decoration: none;
     color: white;
+}
+
+
+.citbag_nav ul li a {
+    color: white ;
     text-wrap: nowrap;
     margin: 0px 5px;
     text-decoration: none;
@@ -78,10 +99,14 @@
 
 .cigbag_img {
   margin-right: 15px;
-  width: 45px;
+  width: 80px;
 }
 
 .education_header_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 550px;
   margin-bottom: 100px;
@@ -95,9 +120,9 @@
   justify-content: end;
   z-index: -2;
   width: 100%;
-  height: 450px;
-  background-color: var(--primary-color);
-  transform: skewY(-4deg);
+  height: 100%;
+  background-color:#e32434;
+  /* transform: skewY(-4deg); */
 
 }
 
@@ -118,7 +143,8 @@
     to bottom,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0),
-    var(--primary-color)
+    rgba(227, 36, 52, 0.902),
+    rgb(227, 36, 52)
   );
 }
 
@@ -144,14 +170,14 @@
 }
 
 .progession_steps_container,
-.pupil_Assessment_container {
+.pupil_assessment_container {
       display: grid;
       grid-template-columns: 1fr;
   
 }
 
 .progession_steps,
-.pupil_Assessment {
+.pupil_assessment {
   padding: 25px;
   border-radius: 15px 15px 0px 0px ;
 }
@@ -162,7 +188,7 @@
   border-radius: 15px 15px 0px 0px ;
 }
 
-.pupil_Assessment {
+.pupil_assessment {
   border-radius: 0px 0px 15px 15px ;
 }
 
@@ -171,13 +197,13 @@
   border-radius: 0px 0px 15px 15px ;
 }
 
-.pupil_Assessment_container .img {
+.pupil_assessment_container .img {
   background-color: #e6e6e6;
   border-radius: 15px 15px 0px 0px ;
 }
 
 .progession_steps_container .img,
-.pupil_Assessment_container .img {
+.pupil_assessment_container .img {
   height: 300px;
   display: flex;
   justify-content: center;
@@ -206,9 +232,17 @@
 }
 
   /*   ## TABLET (769px or bigger) */
-  @media screen and (min-width: 679px) {
+  @media screen and (min-width: 769px) {
     /*    Your Mobile only styles go here */
     
+    .citbag_nav ul {
+      display: flex;
+
+    }
+
+    .citbag_nav.collapse ul {
+      display: none;
+    }
     .cigbag_img {
       width: 80px;
       height: 25px;
@@ -219,64 +253,68 @@
       
   }
 
-  .education_header_img {
-    top: -100px;
-    display: flex;
-    justify-content: end;
-    height: 550px; 
-  }
-  
-  
-  .education_img {
+    .education_header_img {
+      top: -100px;
+      display: flex;
+      justify-content: end;
+    }
+    
+    
+    .education_img {
 
-       top: 60px;
-       width: 48%;
-  }
+        top: 60px;
+        width: 48%;
+    }
 
-  .search_bar {
-    top: -350px;
-    padding: 0px 22%;
-  }
+    .search_bar {
+      top: -350px;
+      left: 0%;
+      padding: 0px 22%;
+    }
 
   .education_container {
     top: -280px;
     padding: 0px 15%;
   }
   .progession_steps_container,
-  .pupil_Assessment_container {
+  .pupil_assessment_container {
       grid-template-columns: 1fr 1fr; 
 
 }
    .progession_steps_container .img,
-   .pupil_Assessment_container .img {
-    height: auto;
+   .pupil_assessment_container .img {
+      height: auto;
    }
 
+   .progession_steps_container p,
+  .pupil_assessment_container p {
+      margin: 20px;
+
+}
+
    .progession_steps_container .img{
-    border-radius: 0px 15px 15px 0px ;
+      border-radius: 0px 15px 15px 0px ;
    }
-   .pupil_Assessment_container .img {
-    border-radius: 15px 0px 0px 15px ;
+   .pupil_assessment_container .img {
+      border-radius: 15px 0px 0px 15px ;
    }
 
    .progession_steps {
-    border-radius: 15px 0px 0px 15px ;
+      border-radius: 15px 0px 0px 15px ;
+      padding: 40px;
+
    }
-   .pupil_Assessment {
-    border-radius: 0px 15px 15px 0px ;
+   .pupil_assessment {
+      border-radius: 0px 15px 15px 0px ;
+      padding: 40px;
    }
 
    .img i {
-    font-size: 4vw; 
+      font-size: 4vw; 
    }
   }
   
-  
-  /*   ## TABLET STYLES (769px to 1024px wide) */
-  @media screen and (min-width: var(--mobile-max)) and (max-width: var(--tablet-max)) {
-    /*    Your tablet-specific styles go here */
-    /* - {NAME} STYLES */
-  }
+
   
   
   /*   ## LAPTOP STYLES (1025px to 1440px wide) */
@@ -288,8 +326,37 @@
   
   
   /*   ## DESKTOP STYLES (1441px wide and above) */
-  @media screen and (min-width: var(--desktop-min)) {
+  @media screen and (min-width: 1441px) {
     /*    Your desktop-specific styles go here */
-    /* - {NAME} STYLES */
+
+    .citbag_nav img {
+      width: 145px;
+      height: 90px;
+    }
+    .education_header_container {
+      height: 1000px;
+    }
+
+    .search_bar {
+      top: -500px;
+      width: 75%;
+      
+    }
+
+    .search_bar .form-control {
+      font-size: 40px;
+    }
+
+    .search_bar .btn {
+      padding: 0px 25px;
+      border-radius: 10px;
+
+    }
+
+    .education_container {
+      padding: 0px 34%;
+    }
+
+
   }
   
