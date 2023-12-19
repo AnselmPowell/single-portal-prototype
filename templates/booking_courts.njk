@@ -1,78 +1,87 @@
 {% extends "base_booking.njk" %}
-
+ 
 {% block content %}
 <div class="container">
-     <nav class="breadcrumbs" aria-label="breadcrumb">
-        <ol style="background-color: transparent;" class="breadcrumb">
-            <li class="breadcrumb-item"><a href="portal.html">Home</a></li>
-            <li class="breadcrumb-item" ><a href="booking.html">Manage bookings</a></li>
-            <li class="breadcrumb-item "><a href="booking_national_centre.html">Cardiff National Centre</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Book a court</li>
-        </ol>
-    </nav>
-    <h1 class="font-weight-bold mt-5 mb-5">Book a court</h1>
-    <p>Here, you can easily reserve both indoor and outdoor sports facilities. Experience top-notch amenities, just like our elite athletes do. Start booking your court now and enjoy your favorite sports with us.</p>
-    <h2 class="font-weight-bold mt-5 mb-5">Racquet sports</h2>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Badminton</h3>
-                <a class="btn btn-outline-danger mb-3" href="booking_badminton.html" role="button">Make a booking</a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Outdoor tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Table tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-    </div>
-    <h2 class="font-weight-bold mt-5 mb-5">Team sports</h2>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Indoor tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        {# <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Outdoor tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Table tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div> #}
-    </div>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Basketball</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Outdoor hockey</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div>
-        {# <div class="col-lg-4">
-            <div class="card">
-                <h3 class="pb-3 font-weight-bold mt-3 mb-3">Table tennis</h3>
-                <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
-            </div>
-        </div> #}
-    </div>
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+       <ol style="background-color: transparent;" class="breadcrumb">
+           <li class="breadcrumb-item"><a href="portal.html">Home</a></li>
+           <li class="breadcrumb-item" ><a href="booking.html">Manage bookings</a></li>
+           <li class="breadcrumb-item "><a href="booking_national_centre.html">Cardiff National Centre</a></li>
+           <li class="breadcrumb-item active" aria-current="page">Book a court</li>
+       </ol>
+   </nav>
+   <h1 class="font-weight-bold mt-5 mb-5">Book a court</h1>
+   <p>Here, you can easily reserve both indoor and outdoor sports facilities. Experience top-notch amenities, just like our elite athletes do. Start booking your court now and enjoy your favorite sports with us.</p>
+   <h2 class="font-weight-bold mt-5 mb-5">Racquet sports</h2>
+   <div class="row">
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Badminton</h3>
+               <a class="btn btn-outline-danger mb-3" href="booking_badminton.html" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Indoor Tennis</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Outdoor Tennis</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Table Tennis</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Squash</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+   </div>
+   <h2 class="font-weight-bold mt-5 mb-5">Team sports</h2>
+   <div class="row">
+       
+       
+   </div>
+   <div class="row">
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Basketball</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Netball</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Korfball</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Outdoor Hockey</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       <div class="col-lg-4">
+           <div class="card">
+               <h3 class="pb-3 font-weight-bold mt-3 mb-3">Outdoor Football</h3>
+               <a class="btn btn-outline-danger mb-3" href="" role="button">Make a booking</a>
+           </div>
+       </div>
+       
+   </div>
 </div>
 {% endblock %}
