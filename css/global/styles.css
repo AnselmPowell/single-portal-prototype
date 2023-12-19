@@ -100,25 +100,6 @@ a:visited {
 /*      Your mobile/default styles go here   */
 
 
-/* LAYOUTS & CONTAINERS */
-
-/* Grid Container */
-.container {
-  display: grid;
-  gap: 1em;
-  margin: 1em;
-}
-
-/* Two-Column Container */
-.two-column {
-  grid-template-columns: 1fr 1fr;
-}
-
-/* Three-Column Container */
-.three-column {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 /* DEFAULT LOGO STYLES */
 .sw_logo {
   width: 120px;
@@ -134,42 +115,8 @@ a:visited {
 }
 
 
-/* DEFAULT FONTS STYLES */
-
-.header-l {
-  font-size: large;
-}
-.header-m {
-  font-size: medium;
-}
-.header-s {
-  font-size: small;
-}
-
-.subheader-l {
-  font-size: large;
-}
-.subheader-m {
-  font-size: medium;
-}
-.subheader-s {
-  font-size: small;
-}
-
-.txt-l {
-  font-size: large;
-}
-.txt-m {
-  font-size: medium;
-}
-.txt-s {
-  font-size: small;
-}
-
 
 /* HOVER STYLES */
-
-
 .hover-list li::after {
   content: "";
   width: 0%;
@@ -184,6 +131,7 @@ a:visited {
 .hover-list li:hover::after {
   width: 100%;
 }
+
 
 /* UTILS STYLES */
 
@@ -271,9 +219,10 @@ a.btn-outline-danger:hover {
   color: white!important;
 }
 
-div.card, div.container {
-  display: block;
+ div.container {
+  min-height: 70vh;
 }
+  
   
 
 
